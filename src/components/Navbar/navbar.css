@@ -1,0 +1,28 @@
+#icone-navbar{
+    width: 30px;
+    height: 30px;
+}
+
+.navbar{
+    background-color: var(--light);
+}
+
+.nav-link{
+    color: var(--color);
+}
+
+.nav-link:hover{
+    color: var(--color2);
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../../assets/svg/navbar-icon.svg);
+}
