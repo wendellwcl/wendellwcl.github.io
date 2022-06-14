@@ -8,14 +8,11 @@
 
 #name{
     color: var(--color);
+    font-size: 2.5em;
 }
 
 #landing-container h1{
     font-size: 2em;
-}
-
-#landing-container span{
-    font-size: 2.5em;
 }
 
 #landing-container #btn-container{

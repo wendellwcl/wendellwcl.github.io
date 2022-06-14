@@ -1,0 +1,29 @@
+#skills-container{
+    background-image: linear-gradient(135deg, var(--color) 50%, var(--color2));
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+#skills-container h2{
+    color: #FFF;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.glass{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+}
+
+#skills-container h3{
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 5px;
+}

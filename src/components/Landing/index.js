@@ -16,7 +16,6 @@ const Landing = () => {
         });
     }, [])
 
-
     return(
         <section className="container-fluid" id="landing-container">
             <div className="container">
@@ -26,7 +25,7 @@ const Landing = () => {
                         <h1 className="text-center text-md-start">
                             Olá, me chamo 
                             <br />
-                            <span id="name">Wendell </span>
+                            <strong id="name">Wendell </strong>
                             <br />
                             Dev Front-End
                         </h1>
