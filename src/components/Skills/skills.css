@@ -1,7 +1,6 @@
 #skills-container{
     background-image: linear-gradient(135deg, var(--color) 50%, var(--color2));
     padding: 30px;
-    padding-bottom: 0;
 }
 
 #skills-container h2{
@@ -26,4 +25,8 @@
     font-weight: bold;
     font-size: 1.5em;
     margin-top: 5px;
+}
+
+.reveal1, .reveal2, .reveal3, .reveal4{
+    display: hidden;
 }
