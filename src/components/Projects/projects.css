@@ -1,0 +1,80 @@
+#projects-container{
+    padding: 30px;
+}
+
+#projects-container h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#projects-container h3{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#projects-container .card{
+    box-shadow: 0px 0px 0px 0px var(--color);
+    transition: 0.3s;
+}
+
+#projects-container .card:hover{
+    box-shadow: 0px 5px 10px var(--color);
+}
+
+#projects-container h2{
+    font-weight: bold;
+}
+
+.card-title{
+    font-weight: bold;
+    color: var(--color);
+}
+
+#projects-container .card img{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+}
+
+#projects-container .card-title{
+    position: relative;
+    top: -30%;
+    margin-bottom: 0;
+}
+
+#projects-container .card a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #FFF;
+    background-color: var(--color);
+    padding: 5px 15px;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#projects-container .card a:hover{
+    color: var(--color);
+    background-color: transparent;
+}
+
+#projects-container .btn{
+    color: #FFF;
+    background-color: var(--color);
+    border: 2px solid var(--color);
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+#projects-container .btn:hover{
+    color: var(--color);
+    background-color: transparent;
+}
+
+#show-more{
+    height: 0px;
+    overflow: hidden;
+}
+
+#show-more.show{
+    height: auto;
+}
