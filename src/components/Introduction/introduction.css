@@ -1,0 +1,14 @@
+#introduction-container{
+    padding: 30px;
+}
+
+#introduction-container h2{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#introduction-container .text-highlight{
+    color: var(--color);
+    font-weight: bold;
+}
