@@ -2,14 +2,14 @@
 import './skills.css'
 
 //Assets
-import Html from '../../assets/img/html.png'
-import Css from '../../assets/img/css.png'
-import Javascript from '../../assets/img/javascript.png'
-import Bootstrap from '../../assets/img/bootstrap.png'
-import ReactIcon from '../../assets/img/react.png'
-import Styledcomponents from '../../assets/img/styledcomponents.png'
-import Github from '../../assets/img/github.png'
-import Git from '../../assets/img/git.png'
+import Html from '../../assets/img/icones-skills/html.png'
+import Css from '../../assets/img/icones-skills/css.png'
+import Javascript from '../../assets/img/icones-skills/javascript.png'
+import Bootstrap from '../../assets/img/icones-skills/bootstrap.png'
+import ReactIcon from '../../assets/img/icones-skills/react.png'
+import Styledcomponents from '../../assets/img/icones-skills/styledcomponents.png'
+import Github from '../../assets/img/icones-skills/github.png'
+import Git from '../../assets/img/icones-skills/git.png'
 
 import { useEffect } from 'react'
 import ScrollReveal from 'scrollreveal'
