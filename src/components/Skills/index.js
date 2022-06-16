@@ -39,7 +39,7 @@ const Skills = () => {
 
             <div className="container">
 
-                <div className="row row-cols-8 d-flex justify-content-around">
+                <div className="row d-flex justify-content-around">
 
                     <div className="col-6 col-md-2">
                         <div className="reveal1 d-flex flex-column align-items-center">
