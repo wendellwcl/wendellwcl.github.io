@@ -7,7 +7,7 @@ const Faq = () => {
 
             <h2 className="text-center">Mais sobre mim</h2>
 
-            <details className="mb-3">
+            <details open className="mb-5">
                 <summary>Experiência profissional em uma Multinacional</summary>
                 <p>
                     Participei do time de uma <span className="text-highlight">Multinacional de grande porte, Ericsson</span>, durante 2 anos.
@@ -15,7 +15,7 @@ const Faq = () => {
                 </p>
             </details>
 
-            <details className="mb-3">
+            <details open className="mb-5">
                 <summary>Habilidades complementares - Design</summary>
                 <p>
                     Possuo conhecimentos sobre <span className="text-highlight">Design e Motion Design</span>, que me permitem ter uma boa compreensão sobre aspectos estéticos e funcionais relacionados a área visual.
