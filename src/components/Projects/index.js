@@ -68,7 +68,7 @@ const Projects = () => {
                 
                 <div className="row d-flex justify-content-around mb-0 mb-md-3" id="show-more" ref={btnRef}>
 
-                    <div className="col-12 col-md-3 g-0 card text-end mb-3 mb-md-0">
+                    <div className="col-12 col-md-3 g-0 card text-end mb-3">
                         <img src={Calculadora} alt="capa do site: Calculadora" className="card-img-top"/>
                         <div className="card-body">
                             <h3 className="card-title text-start">Calculadora</h3>
@@ -76,7 +76,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className="col-12 col-md-3 g-0 card text-end mb-3 mb-md-0">
+                    <div className="col-12 col-md-3 g-0 card text-end mb-3">
                         <img src={Gerador} alt="capa do site: Gerador de Senhas" className="card-img-top"/>
                         <div className="card-body">
                             <h3 className="card-title text-start">Gera Senhas</h3>
@@ -84,7 +84,7 @@ const Projects = () => {
                         </div>
                     </div>
 
-                    <div className="col-12 col-md-3 g-0 card text-end mb-3 mb-md-0">
+                    <div className="col-12 col-md-3 g-0 card text-end mb-3">
                         <img src={EmBreve} alt="capa do site: MyArt" className="card-img-top"/>
                         <div className="card-body">
                             <h3 className="card-title text-start">Em Breve...</h3>
