@@ -7,6 +7,7 @@ import Landing from './components/Landing';
 import Introduction from './components/Introduction';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Faq from './components/Faq';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Introduction/>
       <Skills/>
       <Projects/>
+      <Faq/>
     </div>
   );
 }
