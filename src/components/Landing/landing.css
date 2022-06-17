@@ -1,9 +1,6 @@
 #landing-container{
     height: 100vh;
     background-color: var(--light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #name{

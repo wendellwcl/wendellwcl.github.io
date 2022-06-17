@@ -8,6 +8,10 @@
     margin-bottom: 30px;
 }
 
+#introduction-container p{
+    font-size: 1.1em;
+}
+
 #introduction-container .text-highlight{
     color: var(--color);
     font-weight: bold;

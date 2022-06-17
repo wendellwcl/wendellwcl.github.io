@@ -17,7 +17,7 @@ const Landing = () => {
     }, [])
 
     return(
-        <section className="container-fluid" id="landing-container">
+        <section className="container-fluid d-flex align-items-center justify-content-center" id="landing-container">
             <div className="container">
                 <div className="row">
 
