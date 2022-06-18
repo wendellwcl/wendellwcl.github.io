@@ -22,19 +22,19 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbar-top">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link 1</a>
+                            <a className="nav-link" href="#introduction-container">Apresentação</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link 2</a>
+                            <a className="nav-link" href="#skills-container">Habilidades</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link 3</a>
+                            <a className="nav-link" href="#projects-container">Projetos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link 4</a>
+                            <a className="nav-link" href="#faq-container">Complementos</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Link 5</a>
+                            <a className="nav-link" href="#contact-container">Contato</a>
                         </li>
                     </ul>
                 </div>

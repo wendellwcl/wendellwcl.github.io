@@ -30,7 +30,7 @@ const Landing = () => {
                             Dev Front-End
                         </h1>
 
-                        <div className="mb-5 mb-md-0" id="btn-container">
+                        <div id="btn-container">
                             <a href="https://github.com/wendellwcl" target="blank" role="button"><i class="bi bi-github"></i>Github</a>
                             <a href="https://www.linkedin.com/in/wendell-corr%C3%AAa-lima-8a4312191/" target="blank" role="button"><i class="bi bi-linkedin"></i>Linkedin</a>
                         </div>

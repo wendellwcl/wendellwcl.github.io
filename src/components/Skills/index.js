@@ -19,16 +19,10 @@ const Skills = () => {
     useEffect(() => {
         ScrollReveal({reset: true})
         ScrollReveal().reveal('.reveal1', {
-            delay: 100
-        })
-        ScrollReveal().reveal('.reveal2', {
             delay: 200
         })
-        ScrollReveal().reveal('.reveal3', {
-            delay: 300
-        })
-        ScrollReveal().reveal('.reveal4', {
-            delay: 400
+        ScrollReveal().reveal('.reveal2', {
+            delay: 250
         })
     }, [])
 
@@ -49,21 +43,21 @@ const Skills = () => {
                     </div>
 
                     <div className="col-6 col-md-2">
-                        <div className="reveal2 d-flex flex-column align-items-center">
+                        <div className="reveal1 d-flex flex-column align-items-center">
                             <img src={Css} alt="icone css 3" className="img-fluid glass"/>
                             <h3 className="text-center mb-5 mb-md-0">css 3</h3>
                         </div>
                     </div>
 
                     <div className="col-6 col-md-2">
-                        <div className="reveal3 d-flex flex-column align-items-center">
+                        <div className="reveal2 d-flex flex-column align-items-center">
                             <img src={Javascript} alt="icone javascript" className="img-fluid glass"/>
                             <h3 className="text-center mb-5 mb-md-0">javascript</h3>
                         </div>
                     </div>
 
                     <div className="col-6 col-md-2">
-                        <div className="reveal4 d-flex flex-column align-items-center">
+                        <div className="reveal2 d-flex flex-column align-items-center">
                             <img src={Bootstrap} alt="icone bootstrap" className="img-fluid glass"/>
                             <h3 className="text-center mb-5 mb-md-0">bootstrap</h3>
                         </div>
@@ -80,21 +74,21 @@ const Skills = () => {
                     </div>
 
                     <div className="col-6 col-md-2">
-                        <div className="reveal2 d-flex flex-column align-items-center">
+                        <div className="reveal1 d-flex flex-column align-items-center">
                             <img src={Styledcomponents} alt="icone styled components" className="img-fluid glass"/>
                             <h3 className="text-center mb-5 mb-md-0">styled components</h3>
                         </div>
                     </div>
 
                     <div className="col-6 col-md-2">
-                        <div className="reveal3 d-flex flex-column align-items-center">
+                        <div className="reveal2 d-flex flex-column align-items-center">
                             <img src={Github} alt="icone github" className="img-fluid glass"/>
                             <h3 className="text-center mb-5 mb-md-0">github</h3>
                         </div>
                     </div>
                     
                     <div className="col-6 col-md-2">
-                        <div  className="reveal4 d-flex flex-column align-items-center">
+                        <div  className="reveal2 d-flex flex-column align-items-center">
                             <img src={Git} alt="icone git" className="img-fluid glass"/>
                             <h3 className="text-center mb-5 mb-md-0">git</h3>
                         </div>

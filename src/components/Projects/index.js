@@ -18,14 +18,14 @@ const Projects = () => {
 
     const btnRef = useRef()
 
-    const [showKey, setShowKey] = useState(false)
+    const [showMore, setShowMore] = useState(false)
 
-    const handleShowKey = () => {
+    const handleShowMore = () => {
 
-        if(showKey){
-            setShowKey(false)
+        if(showMore){
+            setShowMore(false)
         } else {
-            setShowKey(true)
+            setShowMore(true)
         }
 
         btnRef.current.classList.toggle('show')
@@ -34,7 +34,7 @@ const Projects = () => {
     return(
         <section id="projects-container">
             
-            <h2 className="text-center">Projetos</h2>
+            <h2 className="text-center">Meus Projetos</h2>
 
             <div className="container mb-2" id="container-projetos-pessoais">
                 <div className="row d-flex justify-content-around mb-0 mb-md-3">
@@ -93,8 +93,8 @@ const Projects = () => {
                 </div>
             </div>
 
-            <button type="button" className="d-flex mx-auto btn mb-5" onClick={() => handleShowKey()}>
-                {showKey ? <span><i class="bi bi-dash-circle-fill me-2"></i>ver menos</span> : <span><i class="bi bi-plus-circle-fill me-2"></i>ver mais</span>}
+            <button type="button" className="d-flex mx-auto btn mb-5" onClick={() => handleShowMore()}>
+                {showMore ? <span><i class="bi bi-dash-circle-fill me-2"></i>ver menos</span> : <span><i class="bi bi-plus-circle-fill me-2"></i>ver mais</span>}
             </button>
 
             <div className="container" id="container-projetos-academicos">

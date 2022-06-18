@@ -1,6 +1,5 @@
 #landing-container{
     height: 100vh;
-    background-color: var(--light);
 }
 
 #name{
@@ -35,8 +34,4 @@
 
 #landing-container #btn-container a i{
     margin-right: 10px;
-}
-
-#landing-container #img-container{
-    overflow: hidden;
 }

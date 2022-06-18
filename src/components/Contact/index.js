@@ -7,7 +7,7 @@ const Contact = () => {
 
             <div className="container text-center">
 
-                <h2>Entre em contato</h2>
+                <h2>Entre em Contato</h2>
 
                 <p>
                     Interesse em contar com meu trabalho ou alguma duvida para esclarecer?

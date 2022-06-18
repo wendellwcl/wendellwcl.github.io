@@ -1,3 +1,4 @@
+//Css
 import './faq.css'
 
 const Faq = () => {
@@ -7,7 +8,7 @@ const Faq = () => {
 
             <div className="container">
 
-                <h2 className="text-center">Mais sobre mim</h2>
+                <h2 className="text-center">Mais Sobre Mim</h2>
 
                 <details open className="mb-5">
                     <summary>Experiência profissional em uma Multinacional</summary>
@@ -17,7 +18,7 @@ const Faq = () => {
                     </p>
                 </details>
 
-                <details open className="mb-5">
+                <details open>
                     <summary>Habilidades complementares - Design</summary>
                     <p>
                         Possuo conhecimentos sobre <span className="text-highlight">Design e Motion Design</span>, que me permitem ter uma boa compreensão sobre aspectos estéticos e funcionais relacionados a área visual.

@@ -14,7 +14,7 @@
 }
 
 #projects-container .card{
-    box-shadow: 0px 0px 0px 0px var(--color);
+    box-shadow: 0px 0px 0px var(--color);
     transition: 0.3s;
 }
 
@@ -22,23 +22,19 @@
     box-shadow: 0px 5px 10px var(--color);
 }
 
-#projects-container h2{
-    font-weight: bold;
-}
-
 .card-title{
     font-weight: bold;
     color: var(--color);
-}
-
-#projects-container .card img{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
 }
 
 #projects-container .card-title{
     position: relative;
     top: -30%;
     margin-bottom: 0;
+}
+
+#projects-container .card img{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
 }
 
 #projects-container .card a{
