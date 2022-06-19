@@ -1,15 +1,15 @@
 //Css
 import './App.css';
 
-//Componentes
-import Navbar from './components/Navbar';
-import Landing from './components/Landing';
-import Introduction from './components/Introduction';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Faq from './components/Faq';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+//Sections
+import Navbar from './sections/Navbar';
+import Landing from './sections/Landing';
+import Introduction from './sections/Introduction';
+import Skills from './sections/Skills';
+import Projects from './sections/Projects';
+import Faq from './sections/Faq';
+import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 function App() {
   return (

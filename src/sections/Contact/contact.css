@@ -1,0 +1,17 @@
+#contact-container{
+    height: calc(100vh - 243.5px);
+}
+
+#contact-container p{
+    font-size: 1.1em;
+}
+
+#contact-container #email{
+    color: var(--color);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#contact-container #email i{
+    margin-right: 10px;
+}

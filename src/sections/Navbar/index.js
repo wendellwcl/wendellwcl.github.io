@@ -11,7 +11,7 @@ const Navbar = () => {
 
             <div className="container">
                 
-                <a className="navbar-brand" href="#">
+                <a className="navbar-brand" href="#landing-container">
                     <img src={Logo} alt="icone" id="icon-navbar"/>
                 </a>
 

@@ -4,6 +4,9 @@ import './landing.css'
 //Assets
 import Logo from '../../assets/img/logo wcl.png'
 
+//Styled-Components
+import { ButtonLink } from '../../styled-components/styled-components'
+
 import { useEffect } from 'react'
 import VanillaTilt from 'vanilla-tilt'
 
@@ -31,8 +34,12 @@ const Landing = () => {
                         </h1>
 
                         <div id="btn-container">
-                            <a href="https://github.com/wendellwcl" target="blank" role="button"><i class="bi bi-github"></i>Github</a>
-                            <a href="https://www.linkedin.com/in/wendell-corr%C3%AAa-lima-8a4312191/" target="blank" role="button"><i class="bi bi-linkedin"></i>Linkedin</a>
+                            <ButtonLink href="https://github.com/wendellwcl" target="blank" role="button">
+                                <i class="bi bi-github"></i>Github
+                            </ButtonLink>
+                            <ButtonLink href="https://www.linkedin.com/in/wendell-corr%C3%AAa-lima-8a4312191/" target="blank" role="button">
+                                <i class="bi bi-linkedin"></i>Linkedin
+                            </ButtonLink>
                         </div>
                     </div>
 

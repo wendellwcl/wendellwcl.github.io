@@ -1,0 +1,9 @@
+#faq-container details summary{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#faq-container details p{
+    font-size: 1.1rem;
+    color: var(--light);
+}

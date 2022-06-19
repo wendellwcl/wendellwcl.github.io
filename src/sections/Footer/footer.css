@@ -1,6 +1,4 @@
-#footer-container{
-    padding: 30px;
-    background-image: linear-gradient(135deg, var(--color), var(--color2));
+#footer-container span{
     color: var(--light);
     font-weight: bold;
 }

@@ -1,0 +1,16 @@
+#landing-container{
+    height: 100vh;
+}
+
+#landing-container #name{
+    color: var(--color);
+    font-size: 2.5em;
+}
+
+#landing-container h1{
+    font-size: 2em;
+}
+
+#landing-container #btn-container{
+    margin-top: 30px;
+}

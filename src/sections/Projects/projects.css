@@ -1,0 +1,13 @@
+#projects-container h3{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#show-more{
+    height: 0px;
+    overflow: hidden;
+}
+
+#show-more.show{
+    height: auto;
+}

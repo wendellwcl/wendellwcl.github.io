@@ -1,19 +1,22 @@
 //Css
 import './faq.css'
 
+//Styled-Components
+import { Container, Title, Emphasis } from '../../styled-components/styled-components'
+
 const Faq = () => {
 
     return(
-        <section id="faq-container" className="container-fluid">
+        <Container id="faq-container" className="container-fluid background-gradient">
 
             <div className="container">
 
-                <h2 className="text-center">Mais Sobre Mim</h2>
+                <Title color='var(--light)'>Mais Sobre Mim</Title>
 
                 <details open className="mb-5">
                     <summary>Experiência profissional em uma Multinacional</summary>
                     <p>
-                        Participei do time de uma <span className="text-highlight">Multinacional de grande porte, Ericsson</span>, durante 2 anos.
+                        Participei do time de uma <Emphasis color='var(--dark)'>Multinacional de grande porte, Ericsson</Emphasis>, durante 2 anos.
                         Tal experiência foi bastante positiva, sendo uma ótima escola para minha formação como profissional.
                     </p>
                 </details>
@@ -21,12 +24,12 @@ const Faq = () => {
                 <details open>
                     <summary>Habilidades complementares - Design</summary>
                     <p>
-                        Possuo conhecimentos sobre <span className="text-highlight">Design e Motion Design</span>, que me permitem ter uma boa compreensão sobre aspectos estéticos e funcionais relacionados a área visual.
+                        Possuo conhecimentos sobre <Emphasis color='var(--dark)'>Design e Motion Design</Emphasis>, que me permitem ter uma boa compreensão sobre aspectos estéticos e funcionais relacionados a área visual.
                     </p>
                 </details>
 
             </div>
-        </section>
+        </Container>
     )
 
 }
