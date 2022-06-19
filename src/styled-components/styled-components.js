@@ -111,7 +111,7 @@ export const Card = styled.div`
 
     h3{
         position: relative;
-        top: -30%;
+        top: -20%;
         margin-bottom: 0;
         text-align: start;
         color: var(--color);
