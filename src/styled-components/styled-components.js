@@ -1,11 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-    padding: 30px;
-`
-
-export const FooterContainer = styled.footer`
-    padding: 30px;
+    padding: 90px 30px;
 `
 
 export const Title = styled.h2`

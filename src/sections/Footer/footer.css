@@ -1,3 +1,7 @@
+#footer-container{
+    padding: 30px 0px;
+}
+
 #footer-container span{
     color: var(--light);
     font-weight: bold;
