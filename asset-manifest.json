@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.01c4fa11.css",
+    "main.js": "/static/js/main.98a433fa.js",
+    "static/js/787.be55e6d0.chunk.js": "/static/js/787.be55e6d0.chunk.js",
+    "static/media/spotifyclone.png": "/static/media/spotifyclone.6727fa866daceed69196.png",
+    "static/media/myart.png": "/static/media/myart.d7081b0e50c4c66aad3f.png",
+    "static/media/filmaria.png": "/static/media/filmaria.4f628d879bb8c5548913.png",
+    "static/media/logo wcl.png": "/static/media/logo wcl.1f6bb50ef3064a43f50a.png",
+    "static/media/jokenpo.png": "/static/media/jokenpo.ee3d82032312b89d7794.png",
+    "static/media/icone.png": "/static/media/icone.1643457460ce5ef66495.png",
+    "static/media/jogodavelha.png": "/static/media/jogodavelha.c9dde1321b186408de71.png",
+    "static/media/finans.png": "/static/media/finans.64208bcea1de64b0be20.png",
+    "static/media/geradordesenhas.png": "/static/media/geradordesenhas.b2ff26306fc81a732eb4.png",
+    "static/media/assinatura.png": "/static/media/assinatura.3f101c8b8e21fceb5216.png",
+    "static/media/calculadora.png": "/static/media/calculadora.29650c031ff51a7aa122.png",
+    "static/media/react.png": "/static/media/react.3dce25bea606022cdcdd.png",
+    "static/media/styledcomponents.png": "/static/media/styledcomponents.c95d413aceb78052341a.png",
+    "static/media/embreve.png": "/static/media/embreve.c4d639b567272e132d24.png",
+    "index.html": "/index.html",
+    "static/media/navbar-icon.svg": "/static/media/navbar-icon.8347fb78d531da148cf2.svg",
+    "main.01c4fa11.css.map": "/static/css/main.01c4fa11.css.map",
+    "main.98a433fa.js.map": "/static/js/main.98a433fa.js.map",
+    "787.be55e6d0.chunk.js.map": "/static/js/787.be55e6d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01c4fa11.css",
+    "static/js/main.98a433fa.js"
+  ]
+}
