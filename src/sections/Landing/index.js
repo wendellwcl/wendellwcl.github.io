@@ -34,10 +34,10 @@ const Landing = () => {
                         </h1>
 
                         <div id="btn-container">
-                            <ButtonLink href="https://github.com/wendellwcl" target="blank" role="button">
+                            <ButtonLink href="https://github.com/wendellwcl" target="_blank" role="button">
                                 <i class="bi bi-github"></i>Github
                             </ButtonLink>
-                            <ButtonLink href="https://www.linkedin.com/in/wendell-corr%C3%AAa-lima-8a4312191/" target="blank" role="button">
+                            <ButtonLink href="https://www.linkedin.com/in/wendellwcl" target="_blank" role="button">
                                 <i class="bi bi-linkedin"></i>Linkedin
                             </ButtonLink>
                         </div>
