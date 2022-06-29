@@ -2,6 +2,7 @@
 import './projects.css'
 
 //Assets
+import TimeDaTemporada from '../../assets/img/projetos-capa/timedatemporada.png'
 import Jokenpo from '../../assets/img/projetos-capa/jokenpo.png'
 import JogoDaVelha from '../../assets/img/projetos-capa/jogodavelha.png'
 import MyArt from '../../assets/img/projetos-capa/myart.png'
@@ -23,6 +24,11 @@ const Projects = () => {
 
     const personalProjects = [
         {
+            img: TimeDaTemporada,
+            name: 'Time da Temporada',
+            link: 'https://wendellwcl.github.io/TimeDaTemporada-2022/'
+        },
+        {
             img: Jokenpo,
             name: 'JoKenPo',
             link: 'https://wendellwcl.github.io/JogoJokenpo/'
@@ -31,15 +37,15 @@ const Projects = () => {
             img: JogoDaVelha,
             name: 'Jogo da Velha',
             link: 'https://wendellwcl.github.io/JogoDaVelha/'
-        },
-        {
-            img: MyArt,
-            name: 'MyArt',
-            link: 'https://wendellwcl.github.io/MyArt/'
         }
     ]
 
     const showMoreProjects = [
+        {
+            img: MyArt,
+            name: 'MyArt',
+            link: 'https://wendellwcl.github.io/MyArt/'
+        },
         {
             img: Calculadora,
             name: 'Calculadora',
@@ -49,10 +55,6 @@ const Projects = () => {
             img: Gerador,
             name: 'Gera Senhas',
             link: 'https://wendellwcl.github.io/GeradorDeSenhas/'
-        },
-        {
-            img: EmBreve,
-            name: 'Em Breve...',
         }
     ]
 
@@ -104,7 +106,7 @@ const Projects = () => {
                             <div className="card-body">
                                 <h3>{item.name}</h3>
                                 {item.link && 
-                                    <ButtonLink href={item.link} target="_blank" rel="noreferrer" className="stretched-link">Visitar</ButtonLink>
+                                    <ButtonLink href={item.link} target="_blank" rel="noreferrer" className="stretched-link card-btn">Visitar</ButtonLink>
                                 }
                             </div>
                         </Card>
@@ -120,7 +122,7 @@ const Projects = () => {
                             <div className="card-body">
                                 <h3>{item.name}</h3>
                                 {item.link && 
-                                    <ButtonLink href={item.link} target="_blank" rel="noreferrer" className="stretched-link">Visitar</ButtonLink>
+                                    <ButtonLink href={item.link} target="_blank" rel="noreferrer" className="stretched-link card-btn">Visitar</ButtonLink>
                                 }
                             </div>
                         </Card>
@@ -145,7 +147,7 @@ const Projects = () => {
                             <div className="card-body">
                                 <h3>{item.name}</h3>
                                 {item.link && 
-                                    <ButtonLink href={item.link} target="_blank" rel="noreferrer" className="stretched-link">Visitar</ButtonLink>
+                                    <ButtonLink href={item.link} target="_blank" rel="noreferrer" className="stretched-link card-btn">Visitar</ButtonLink>
                                 }
                             </div>
                         </Card>

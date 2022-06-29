@@ -11,3 +11,13 @@
 #show-more.show{
     height: auto;
 }
+
+.card-body{
+    position: relative;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
