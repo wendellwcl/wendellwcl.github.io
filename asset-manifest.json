@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.01c4fa11.css",
-    "main.js": "/static/js/main.01331e44.js",
+    "main.css": "/static/css/main.4a2ad445.css",
+    "main.js": "/static/js/main.dd2c8387.js",
     "static/js/787.be55e6d0.chunk.js": "/static/js/787.be55e6d0.chunk.js",
     "static/media/spotifyclone.png": "/static/media/spotifyclone.6727fa866daceed69196.png",
     "static/media/myart.png": "/static/media/myart.d7081b0e50c4c66aad3f.png",
@@ -10,6 +10,7 @@
     "static/media/jokenpo.png": "/static/media/jokenpo.ee3d82032312b89d7794.png",
     "static/media/icone.png": "/static/media/icone.1643457460ce5ef66495.png",
     "static/media/jogodavelha.png": "/static/media/jogodavelha.c9dde1321b186408de71.png",
+    "static/media/timedatemporada.png": "/static/media/timedatemporada.a141942dd028e82f570e.png",
     "static/media/finans.png": "/static/media/finans.64208bcea1de64b0be20.png",
     "static/media/geradordesenhas.png": "/static/media/geradordesenhas.b2ff26306fc81a732eb4.png",
     "static/media/assinatura.png": "/static/media/assinatura.3f101c8b8e21fceb5216.png",
@@ -19,12 +20,12 @@
     "static/media/embreve.png": "/static/media/embreve.c4d639b567272e132d24.png",
     "index.html": "/index.html",
     "static/media/navbar-icon.svg": "/static/media/navbar-icon.8347fb78d531da148cf2.svg",
-    "main.01c4fa11.css.map": "/static/css/main.01c4fa11.css.map",
-    "main.01331e44.js.map": "/static/js/main.01331e44.js.map",
+    "main.4a2ad445.css.map": "/static/css/main.4a2ad445.css.map",
+    "main.dd2c8387.js.map": "/static/js/main.dd2c8387.js.map",
     "787.be55e6d0.chunk.js.map": "/static/js/787.be55e6d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.01c4fa11.css",
-    "static/js/main.01331e44.js"
+    "static/css/main.4a2ad445.css",
+    "static/js/main.dd2c8387.js"
   ]
 }
