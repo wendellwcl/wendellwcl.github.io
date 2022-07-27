@@ -3,15 +3,14 @@ import './projects.css'
 
 //Assets
 import TimeDaTemporada from '../../assets/img/projetos-capa/timedatemporada.png'
+import Music from '../../assets/img/projetos-capa/music.png'
 import Jokenpo from '../../assets/img/projetos-capa/jokenpo.png'
 import JogoDaVelha from '../../assets/img/projetos-capa/jogodavelha.png'
 import MyArt from '../../assets/img/projetos-capa/myart.png'
 import Calculadora from '../../assets/img/projetos-capa/calculadora.png'
-import Gerador from '../../assets/img/projetos-capa/geradordesenhas.png'
 import Filmaria from '../../assets/img/projetos-capa/filmaria.png'
 import Finans from '../../assets/img/projetos-capa/finans.png'
 import SpotifyClone from '../../assets/img/projetos-capa/spotifyclone.png'
-import EmBreve from '../../assets/img/projetos-capa/embreve.png'
 
 //Styled-Components
 import { Container, Title, Card, Button, ButtonLink } from '../../styled-components/styled-components'
@@ -24,6 +23,11 @@ const Projects = () => {
 
     const personalProjects = [
         {
+            img: Music,
+            name: 'Music Player',
+            link: 'https://wendellwcl.github.io/PlayerDeMusica'
+        },
+        {
             img: TimeDaTemporada,
             name: 'Time da Temporada',
             link: 'https://wendellwcl.github.io/TimeDaTemporada-2022/'
@@ -32,11 +36,6 @@ const Projects = () => {
             img: Jokenpo,
             name: 'JoKenPo',
             link: 'https://wendellwcl.github.io/JogoJokenpo/'
-        },
-        {
-            img: JogoDaVelha,
-            name: 'Jogo da Velha',
-            link: 'https://wendellwcl.github.io/JogoDaVelha/'
         }
     ]
 
@@ -52,9 +51,9 @@ const Projects = () => {
             link: 'https://wendellwcl.github.io/Calculadora/'
         },
         {
-            img: Gerador,
-            name: 'Gera Senhas',
-            link: 'https://wendellwcl.github.io/GeradorDeSenhas/'
+            img: JogoDaVelha,
+            name: 'Jogo da Velha',
+            link: 'https://wendellwcl.github.io/JogoDaVelha/'
         }
     ]
 
