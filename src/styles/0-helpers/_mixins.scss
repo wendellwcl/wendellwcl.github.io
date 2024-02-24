@@ -1,0 +1,44 @@
+@mixin container {
+    height: 100dvh;
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+@mixin background-gradient-dual {
+    background-image: linear-gradient(90deg, var(--color-2), var(--color-3));
+}
+
+@mixin background-gradient-quad {
+    background-image: linear-gradient(
+        90deg,
+        var(--color-1),
+        var(--color-2),
+        var(--color-3),
+        var(--color-4)
+    );
+}
+
+@mixin text-gradient-dual {
+    @include background-gradient-dual;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@mixin btn-default {
+    @include background-gradient-dual;
+    display: block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    color: var(--color-light);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

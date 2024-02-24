@@ -16,6 +16,15 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 ol,
 ul,
 li {
@@ -39,4 +48,7 @@ html,
 body {
   height: 100dvh;
   width: 100vw;
+  max-width: 1320px;
+  min-width: 320px;
+  margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,4 +2,7 @@ html,
 body {
     height: 100dvh;
     width: 100vw;
+    max-width: 1320px;
+    min-width: 320px;
+    margin: 0 auto;
 }
