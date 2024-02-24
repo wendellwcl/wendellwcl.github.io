@@ -1,4 +1,4 @@
-@import "../0-helpers/mixins";
+@import "../0-helpers/helpers-dir";
 
 .hero_container {
     @include container;
@@ -11,25 +11,30 @@
     }
 }
 
-.hero_greeting,
-.hero_img {
+.greeting_container,
+.img_container {
     width: 100%;
     height: 100%;
     padding: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero_greeting {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+.greeting_container {
+    .greeting_group {
+        animation: slide_top 1.2s both cubic-bezier(0, 0, 0, 1);
 
-    @media screen and (min-width: 480px) and (max-width: 768px) {
-        align-items: center;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .greeting {
         font-size: 6.4rem;
+        white-space: nowrap;
         margin-bottom: 1.6rem;
 
         @media screen and (max-width: 1064px) {
@@ -37,14 +42,14 @@
         }
 
         @media screen and (max-width: 768px) {
-            font-size: 4rem;
+            font-size: 5.6rem;
         }
 
         @media screen and (max-width: 480px) {
             font-size: 3.2rem;
         }
 
-        @media screen and (min-width: 480px) and (max-width: 768px) {
+        @media screen and (max-width: 768px) {
             text-align: center;
         }
 
@@ -84,19 +89,44 @@
     }
 }
 
-.hero_img {
+.img_container {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    img {
-        display: block;
-        aspect-ratio: 1/1;
-        width: 100%;
-        max-width: 480px;
+    .badge_img_group {
+        position: relative;
+        animation: badge 1.2s 0.2s both cubic-bezier(0, 0, 0, 1);
 
-        @media screen and (max-width: 768px) {
-            max-width: 320px;
+        .badge_img {
+            position: relative;
+            display: block;
+            aspect-ratio: 1/1;
+            width: 100%;
+            max-width: 480px;
+
+            @media screen and (max-width: 768px) {
+                max-width: 320px;
+            }
+        }
+
+        .arrow_img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 28px;
+            aspect-ratio: 1/1;
+            animation: 0.8s both 0.5s cubic-bezier(0, 0, 0, 1.25);
+
+            &[class*="left"] {
+                animation-name: arrow_left;
+            }
+
+            &[class*="right"] {
+                animation-name: arrow_right;
+            }
         }
     }
 }
