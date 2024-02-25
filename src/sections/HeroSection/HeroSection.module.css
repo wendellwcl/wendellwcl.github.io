@@ -63,7 +63,7 @@
 @media screen and (max-width: 768px) {
   .hero_container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
