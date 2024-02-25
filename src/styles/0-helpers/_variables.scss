@@ -5,4 +5,12 @@
     --color-2: #845eff;
     --color-3: #bc56ff;
     --color-4: #d44eff;
+
+    --background-color: var(--color-light);
+    --text-color: var(--color-dark);
+}
+
+.dark-mode {
+    --background-color: var(--color-dark);
+    --text-color: var(--color-light);
 }
