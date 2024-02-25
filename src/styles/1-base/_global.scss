@@ -2,11 +2,14 @@ html,
 body {
     height: 100dvh;
     width: 100vw;
+}
+
+body {
     max-width: 1320px;
     min-width: 320px;
     margin: 0 auto;
-    color: var(--text-color);
     background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 * {
