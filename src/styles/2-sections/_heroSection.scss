@@ -2,20 +2,11 @@
 
 .hero_container {
     @include container;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-    }
+    @include two-column-grid;
 }
 
 .greeting_container,
 .img_container {
-    width: 100%;
-    height: 100%;
-    padding: 3.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
