@@ -11,7 +11,6 @@ const AboutSection = () => {
                 <div className={styles.about_body}>
                     <div className={styles.about_img}>
                         <img
-                            className={styles.about_img}
                             src={badge2}
                             alt="imagem de um crachá com a foto do desenvolvedor do site"
                         />

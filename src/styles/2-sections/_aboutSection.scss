@@ -14,7 +14,7 @@
 
 .about_body {
     @include two-column-grid;
-    min-height: calc(100dvh - 64px);
+    min-height: calc(100dvh - 96px);
     gap: 6.4rem;
 
     @media screen and (max-width: 768px) {

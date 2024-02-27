@@ -62,74 +62,35 @@
     left: 75%;
   }
 }
-.about_section {
-  background-color: var(--background-color);
-}
-
-.about_container {
+.skills_container {
   min-height: 100dvh;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
   padding: 4.8rem 3.2rem;
-}
-@media screen and (max-width: 768px) {
-  .about_container {
-    min-height: initial;
-  }
-}
-
-.about_body {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  min-height: calc(100dvh - 96px);
-  gap: 6.4rem;
-}
-@media screen and (max-width: 768px) {
-  .about_body {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 768px) {
-  .about_body {
-    min-height: initial;
-    grid-template-rows: auto;
-  }
-}
-
-.about_img,
-.about_text {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
-
 @media screen and (max-width: 768px) {
-  .about_img {
-    display: none;
+  .skills_container {
+    min-height: auto;
   }
 }
-.about_img img {
-  display: block;
-  width: 100%;
-  max-width: 480px;
-  aspect-ratio: 1/1;
-}
 
-.about_text .text_group .title {
+.skills_title {
   font-size: 3.2rem;
   position: relative;
   left: 24px;
   margin-bottom: 2rem;
+  align-self: flex-start;
 }
 @media screen and (max-width: 768px) {
-  .about_text .text_group .title {
+  .skills_title {
     font-size: 2.8rem;
   }
 }
-.about_text .text_group .title::before {
+.skills_title::before {
   content: "";
   display: inline-block;
   width: 0.8em;
@@ -139,14 +100,46 @@
   left: -24px;
   background: url(../../assets/slash.svg) no-repeat;
 }
-.about_text .text_group .text {
-  word-spacing: 0.4rem;
-  line-height: 2.4rem;
+
+.skills {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8rem;
+  align-items: center;
+  justify-content: center;
 }
-.about_text .text_group .text .highlight {
-  background-image: linear-gradient(90deg, var(--color-2), var(--color-3));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+@media screen and (max-width: 768px) {
+  .skills {
+    flex-grow: 0;
+    gap: 3.6rem;
+  }
+}
+.skills .skill_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills .skill_item span {
   font-weight: bold;
-}/*# sourceMappingURL=AboutSection.module.css.map */
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .skills .skill_item span {
+    font-size: 1.4rem;
+  }
+}
+.skills svg {
+  font-size: 12rem;
+}
+@media screen and (max-width: 768px) {
+  .skills svg {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills svg {
+    font-size: 6rem;
+  }
+}/*# sourceMappingURL=SkillsSection.module.css.map */
