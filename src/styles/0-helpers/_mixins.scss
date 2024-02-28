@@ -38,6 +38,13 @@
     color: transparent;
 }
 
+@mixin text-gradient-quad {
+    @include background-gradient-quad;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 @mixin btn-default {
     @include background-gradient-dual;
     display: block;

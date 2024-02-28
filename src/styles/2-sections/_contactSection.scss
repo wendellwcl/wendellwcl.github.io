@@ -1,0 +1,73 @@
+@import "../0-helpers/helpers-dir";
+
+.contact_container {
+    @include container;
+    min-height: auto;
+}
+
+.contact_title {
+    @include section_title;
+}
+
+.contact_grid {
+    @include two-column-grid;
+    gap: 4rem;
+
+    @media screen and (max-width: 768px) {
+        grid-template-rows: repeat(2, auto);
+        gap: 0;
+    }
+}
+
+.contact_text,
+.contact_options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.contact_text {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 3.2rem;
+    }
+
+    .text_highlight {
+        @include text-gradient-quad;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: 480px) {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.contact_options {
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: var(--text-color);
+
+            @media screen and (max-width: 480px) {
+                font-weight: normal;
+            }
+
+            svg {
+                display: block;
+                font-size: 2.8rem;
+                margin-right: 0.8rem;
+                fill: url(#my-cool-gradient) var(--color-3);
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
