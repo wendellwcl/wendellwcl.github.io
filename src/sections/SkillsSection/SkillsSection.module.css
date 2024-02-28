@@ -121,6 +121,27 @@
   flex-direction: column;
   align-items: center;
 }
+.skills .skill_item svg {
+  fill: url(#my-cool-gradient) var(--color-3);
+  font-size: 12rem;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.skills .skill_item svg:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6rem var(--color-2));
+}
+@media screen and (max-width: 768px) {
+  .skills .skill_item svg {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills .skill_item svg {
+    font-size: 6rem;
+  }
+}
 .skills .skill_item span {
   font-weight: bold;
   font-size: 2rem;
@@ -128,18 +149,5 @@
 @media screen and (max-width: 768px) {
   .skills .skill_item span {
     font-size: 1.4rem;
-  }
-}
-.skills svg {
-  font-size: 12rem;
-}
-@media screen and (max-width: 768px) {
-  .skills svg {
-    font-size: 8rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .skills svg {
-    font-size: 6rem;
   }
 }/*# sourceMappingURL=SkillsSection.module.css.map */
