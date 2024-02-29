@@ -39,11 +39,10 @@ const ContactSection = () => {
                 <h3 className={styles.contact_title}>Contato</h3>
                 <div className={styles.contact_grid}>
                     <div className={styles.contact_text}>
-                        <p>
-                            <span className={styles.text_highlight}>
-                                Estou ansioso para podermos conversar!
-                            </span>
-                            <br />
+                        <p className={styles.text_highlight}>
+                            Estou ansioso para conversar!
+                        </p>
+                        <p className={styles.text}>
                             Posso prestar mais informações e esclarecer suas
                             dúvidas.
                             <br />
@@ -53,7 +52,7 @@ const ContactSection = () => {
                     <div className={styles.contact_options}>
                         <ul>
                             {contacts.map((item) => (
-                                <li>
+                                <li key={item.text}>
                                     {item.element}
                                     <a href={item.link} target="_blank">
                                         {item.text}

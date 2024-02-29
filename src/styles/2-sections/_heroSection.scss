@@ -34,14 +34,11 @@
 
         @media screen and (max-width: 768px) {
             font-size: 5.6rem;
+            text-align: center;
         }
 
         @media screen and (max-width: 480px) {
             font-size: 3.2rem;
-        }
-
-        @media screen and (max-width: 768px) {
-            text-align: center;
         }
 
         .name {

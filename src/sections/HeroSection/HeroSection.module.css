@@ -109,16 +109,12 @@
 @media screen and (max-width: 768px) {
   .greeting_container .greeting {
     font-size: 5.6rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
   .greeting_container .greeting {
     font-size: 3.2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .greeting_container .greeting {
-    text-align: center;
   }
 }
 .greeting_container .greeting .name {
