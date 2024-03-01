@@ -1,0 +1,13 @@
+@import "../0-helpers/helpers-dir";
+
+.projects_section {
+    background-color: var(--background-color);
+}
+
+.projects_container {
+    @include container;
+}
+
+.projects_title {
+    @include section_title;
+}
