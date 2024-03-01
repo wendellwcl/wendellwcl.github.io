@@ -2,77 +2,78 @@
 
 .contact_container {
     @include container;
-    min-height: auto;
+    min-height: initial;
 }
 
 .contact_title {
     @include section_title;
 }
 
-.contact_grid {
+.contact_body {
     @include two-column-grid;
-    gap: 1.6rem;
 
     @media screen and (max-width: 768px) {
-        grid-template-rows: repeat(2, auto);
+        grid-template-rows: auto;
     }
 }
 
 .contact_text,
-.contact_options {
+.contact_img {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 0 2rem;
+}
+
+.contact_img {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 520px;
+    }
 }
 
 .contact_text {
-    @media screen and (max-width: 768px) {
-        margin-bottom: 2rem;
-    }
-
     .text_highlight {
         @include text-gradient-dual;
         display: inline-block;
         font-weight: bold;
-        font-size: 5.6rem;
+        font-size: 2.8rem;
         margin-bottom: 1.2rem;
-
-        @media screen and (max-width: 1200px) {
-            font-size: 3.6rem;
-        }
-
-        @media screen and (max-width: 768px) {
-            font-size: 3.2rem;
-            margin-bottom: 0;
-        }
-
-        @media screen and (max-width: 480px) {
-            font-size: 2rem;
-        }
     }
 
     .text {
-        @media screen and (max-width: 768px) {
-            display: none;
-        }
+        margin-bottom: 2.4rem;
     }
 }
 
 .contact_options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     ul {
         li {
             display: flex;
             align-items: center;
             font-weight: bold;
             color: var(--text-color);
+            padding: 0.8rem 0;
+            border-image: linear-gradient(
+                    90deg,
+                    var(--color-1),
+                    var(--color-2),
+                    var(--color-3),
+                    var(--color-4)
+                )
+                30;
+            border-width: 2px;
+            border-style: solid;
+            border-top: none;
+            border-left: none;
+            border-right: none;
 
             &:not(:last-child) {
-                margin-bottom: 2rem;
+                margin-bottom: 1.2rem;
             }
 
             @media screen and (max-width: 480px) {
@@ -83,7 +84,7 @@
             svg {
                 display: block;
                 font-size: 2.8rem;
-                margin-right: 0.8rem;
+                margin-right: 1.2rem;
                 fill: url(#my-cool-gradient) var(--color-3);
             }
 
