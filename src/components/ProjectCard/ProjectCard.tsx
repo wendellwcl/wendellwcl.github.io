@@ -1,51 +1,49 @@
+import { ReactElement } from "react";
 import { BsFillEyeFill, BsGithub, BsWindow } from "react-icons/bs";
 
 //Styles
-import { ReactElement } from "react";
 import styles from "./ProjectCard.module.css";
 
 //Props
 interface Props {
-    img: string;
-    name: string;
-    technologies: { name: string; icon: ReactElement }[];
-    liveUrl: string;
-    repositoryUrl: string;
+    projectData: {
+        img: string;
+        name: string;
+        technologies: { name: string; icon: ReactElement }[];
+        liveUrl: string;
+        repositoryUrl: string;
+    };
 }
 
-const ProjectCard = ({
-    name,
-    img,
-    repositoryUrl,
-    liveUrl,
-    technologies,
-}: Props) => {
+const ProjectCard = ({ projectData }: Props) => {
     return (
         <article className={styles.card_container}>
             <div className={styles.card_body}>
                 <div className={styles.img_container}>
-                    <img src={img} alt={`imagem do porjeto ${name}`} />
-                    <div className={styles.img_filter}></div>
+                    <img
+                        src={projectData.img}
+                        alt={`imagem do porjeto ${projectData.name}`}
+                    />
                 </div>
                 <div className={styles.card_infos}>
                     <div className={styles.technologies}>
-                        {technologies.map((item, index) => (
+                        {projectData.technologies.map((item, index) => (
                             <span title={item.name} key={index}>
                                 {item.icon}
                             </span>
                         ))}
                     </div>
-                    <h4 className={styles.title}>{name}</h4>
+                    <h4 className={styles.title}>{projectData.name}</h4>
                     <div className={styles.links_container}>
                         <button>
                             <BsFillEyeFill />
                             Visualizar
                         </button>
-                        <a href={liveUrl} target="_blank">
+                        <a href={projectData.liveUrl} target="_blank">
                             <BsWindow />
                             Acessar
                         </a>
-                        <a href={repositoryUrl} target="_blank">
+                        <a href={projectData.repositoryUrl} target="_blank">
                             <BsGithub />
                             Repositório
                         </a>
