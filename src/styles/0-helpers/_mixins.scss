@@ -45,6 +45,22 @@
     color: transparent;
 }
 
+@mixin gradient-border-bottom {
+    border-image: linear-gradient(
+            90deg,
+            var(--color-1),
+            var(--color-2),
+            var(--color-3),
+            var(--color-4)
+        )
+        30;
+    border-width: 2px;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
 @mixin btn-default {
     @include background-gradient-dual;
     display: block;

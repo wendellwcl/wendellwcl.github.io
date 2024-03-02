@@ -1,0 +1,173 @@
+:root {
+  --color-dark: #141417;
+  --color-dark-010: #29282b;
+  --color-light: #ffffff;
+  --color-light-010: #e1e1e1;
+  --color-1: #6acee3;
+  --color-2: #845eff;
+  --color-3: #bc56ff;
+  --color-4: #d44eff;
+  --background-color: var(--color-light);
+  --background-color-010: var(--color-light-010);
+  --text-color: var(--color-dark);
+}
+
+.dark-mode {
+  --background-color: var(--color-dark);
+  --background-color-010: var(--color-dark-010);
+  --text-color: var(--color-light);
+}
+
+@keyframes slide_top {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes badge {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateY(45deg) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg) translateY(0px);
+  }
+}
+@keyframes arrow_left {
+  0% {
+    opacity: 0;
+    top: 35%;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    top: 30%;
+    left: 15%;
+  }
+}
+@keyframes arrow_right {
+  0% {
+    opacity: 0;
+    top: 70%;
+    left: 70%;
+  }
+  100% {
+    opacity: 1;
+    top: 75%;
+    left: 75%;
+  }
+}
+.card_container {
+  background-color: var(--background-color-010);
+  width: 100%;
+  border-radius: 1.6rem;
+  overflow: hidden;
+}
+
+.card_body {
+  width: 100%;
+}
+
+.img_container {
+  -o-border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
+     border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
+  border-width: 2px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  width: 100%;
+}
+.img_container:hover .img_filter {
+  opacity: 0;
+}
+.img_container img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: zoom-in;
+}
+.img_container .img_filter {
+  background-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  mix-blend-mode: color;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.card_infos {
+  padding: 2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.technologies span:hover svg {
+  transform: scale(1.5);
+  fill: url(#my-cool-gradient) var(--color-3);
+}
+.technologies svg {
+  font-size: 2.4rem;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+.title {
+  font-size: 3.2rem;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.links_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2rem;
+}
+.links_container a,
+.links_container button {
+  background-image: linear-gradient(90deg, var(--color-2), var(--color-3));
+  display: block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: var(--color-light);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+.links_container a:hover,
+.links_container button:hover {
+  transform: scale(1.1);
+}
+.links_container a svg,
+.links_container button svg {
+  font-size: 2rem;
+  margin-right: 0.4rem;
+}/*# sourceMappingURL=ProjectCard.module.css.map */
