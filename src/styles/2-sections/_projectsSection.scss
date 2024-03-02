@@ -11,3 +11,8 @@
 .projects_title {
     @include section_title;
 }
+
+.projects_group {
+    @include two-column-grid;
+    gap: 6rem;
+}

@@ -153,7 +153,7 @@ const ProjectsSection = () => {
         <section className={styles.projects_section}>
             <div className={styles.projects_container}>
                 <h3 className={styles.projects_title}>Projetos</h3>
-                <div>
+                <div className={styles.projects_group}>
                     {projects.map((project, index) => (
                         <ProjectCard key={index} projectData={project} />
                     ))}

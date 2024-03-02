@@ -94,4 +94,15 @@
   top: 0px;
   left: -24px;
   background: url(../../assets/slash.svg) no-repeat;
+}
+
+.projects_group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .projects_group {
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=ProjectsSection.module.css.map */
