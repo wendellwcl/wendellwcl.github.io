@@ -81,11 +81,15 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  position: relative;
   width: 100%;
+  overflow: hidden;
+  cursor: zoom-in;
 }
 .img_container:hover .img_filter {
   opacity: 0;
+}
+.img_container:hover img {
+  scale: 1.1;
 }
 .img_container img {
   display: block;
@@ -93,7 +97,7 @@
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
-  cursor: zoom-in;
+  transition: all 0.2s;
 }
 
 .card_infos {

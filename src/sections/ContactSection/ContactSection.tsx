@@ -43,9 +43,11 @@ const ContactSection = () => {
                     <div className={styles.contact_text}>
                         <div className={styles.text_group}>
                             <p className={styles.text_highlight}>
-                                Estou ansioso para conversar!
+                                Envie sua mensagem agora mesmo!
                             </p>
-                            <p className={styles.text}>Estou disponível em:</p>
+                            <p className={styles.text}>
+                                Vamos conversar sobre seus projetos.
+                            </p>
                             <div className={styles.contact_options}>
                                 <ul>
                                     {contacts.map((item) => (

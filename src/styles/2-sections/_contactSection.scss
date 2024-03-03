@@ -38,11 +38,14 @@
 
 .contact_text {
     .text_highlight {
-        @include text-gradient-dual;
         display: inline-block;
         font-weight: bold;
         font-size: 2.8rem;
-        margin-bottom: 1.2rem;
+        margin-bottom: 0.4rem;
+
+        @media screen and (max-width: 768px) {
+            font-size: 2.4rem;
+        }
     }
 
     .text {
@@ -71,7 +74,7 @@
 
             svg {
                 display: block;
-                font-size: 2.8rem;
+                font-size: 2rem;
                 margin-right: 1.2rem;
                 fill: url(#my-cool-gradient) var(--color-3);
             }
