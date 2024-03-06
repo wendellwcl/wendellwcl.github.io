@@ -1,4 +1,6 @@
 import { ReactElement, useLayoutEffect, useRef } from "react";
+
+//Icons
 import { BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
 
 //Styles
@@ -9,16 +11,16 @@ interface Props {
 }
 
 const Carousel = ({ children }: Props) => {
-    const sliderRef = useRef<HTMLDivElement>(null);
+    const carouselRef = useRef<HTMLDivElement>(null);
 
     useLayoutEffect(() => {
         const { firstImg, lastImg } = getImgsElements();
         firstImg.classList.add("selected");
-        sliderRef.current?.prepend(lastImg);
+        carouselRef.current?.prepend(lastImg);
     }, []);
 
     function getImgsElements() {
-        const imgsArr = sliderRef.current?.children;
+        const imgsArr = carouselRef.current?.children;
         const firstImg = imgsArr![0];
         const lastImg = imgsArr![imgsArr!.length - 1];
 
@@ -28,17 +30,17 @@ const Carousel = ({ children }: Props) => {
     function handleArrowClick(action: string) {
         const { firstImg, lastImg } = getImgsElements();
 
-        const currentImg = sliderRef.current?.querySelector(".selected");
+        const currentImg = carouselRef.current?.querySelector(".selected");
         currentImg?.classList.remove("selected");
 
         let targetImg;
 
         if (action === "prev") {
             targetImg = currentImg?.previousElementSibling;
-            sliderRef.current?.prepend(lastImg);
+            carouselRef.current?.prepend(lastImg);
         } else if (action === "next") {
             targetImg = currentImg?.nextElementSibling;
-            sliderRef.current?.append(firstImg);
+            carouselRef.current?.append(firstImg);
         }
 
         targetImg?.classList.add("selected");
@@ -52,13 +54,15 @@ const Carousel = ({ children }: Props) => {
             >
                 <BsCaretLeftFill />
             </button>
+
             <button
                 className={`${styles.btn_action} next`}
                 onClick={() => handleArrowClick("next")}
             >
                 <BsCaretRightFill />
             </button>
-            <div className={styles.carousel} ref={sliderRef}>
+
+            <div className={styles.carousel} ref={carouselRef}>
                 {children}
             </div>
         </div>

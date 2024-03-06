@@ -9,7 +9,7 @@
     @include section_title;
 }
 
-.contact_body {
+.contact_grid {
     @include two-column-grid;
 
     @media screen and (max-width: 768px) {
@@ -22,18 +22,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.contact_img {
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-
-    img {
-        display: block;
-        width: 100%;
-        max-width: 520px;
-    }
 }
 
 .contact_text {
@@ -57,10 +45,7 @@
     ul {
         li {
             @include gradient-border-bottom;
-            display: flex;
-            align-items: center;
             font-weight: bold;
-            color: var(--text-color);
             padding: 0.8rem 0;
 
             &:not(:last-child) {
@@ -72,16 +57,29 @@
                 font-size: 1.4rem;
             }
 
-            svg {
-                display: block;
-                font-size: 2rem;
-                margin-right: 1.2rem;
-                fill: url(#my-cool-gradient) var(--color-3);
-            }
-
             a {
-                color: inherit;
+                display: flex;
+                align-items: center;
+                color: var(--text-color);
+
+                svg {
+                    font-size: 1.6em;
+                    margin-right: 1rem;
+                    fill: url(#fill-gradient) var(--color-3);
+                }
             }
         }
+    }
+}
+
+.contact_img {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 520px;
     }
 }

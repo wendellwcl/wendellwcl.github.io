@@ -1,4 +1,6 @@
 import { ReactElement } from "react";
+
+//Icons
 import { BsFillEyeFill, BsGithub, BsWindow } from "react-icons/bs";
 
 //Custom Hooks
@@ -11,7 +13,6 @@ import Modal from "../Modal/Modal";
 //Styles
 import styles from "./ProjectCard.module.css";
 
-//Props
 interface Props {
     projectData: {
         imgs: string[];
@@ -35,6 +36,7 @@ const ProjectCard = ({ projectData }: Props) => {
                         onClick={() => openModal(`modal-${projectData.name}`)}
                     />
                 </div>
+
                 <div className={styles.card_infos}>
                     <div className={styles.technologies}>
                         {projectData.technologies.map((item, index) => (
@@ -43,7 +45,9 @@ const ProjectCard = ({ projectData }: Props) => {
                             </span>
                         ))}
                     </div>
+
                     <h4 className={styles.title}>{projectData.name}</h4>
+
                     <div className={styles.btn_container}>
                         <button
                             onClick={() =>
@@ -56,24 +60,27 @@ const ProjectCard = ({ projectData }: Props) => {
                     </div>
                 </div>
             </div>
+
             <Modal id={`modal-${projectData.name}`}>
-                <div>
+                <>
                     <Carousel>
                         {projectData.imgs.map((img, index) => (
                             <img key={index} src={img} />
                         ))}
                     </Carousel>
-                    <div className={styles.links}>
+
+                    <div className={styles.modal_links}>
                         <a href={projectData.liveUrl} target="_blank">
                             <BsWindow />
                             Acessar Projeto
                         </a>
+
                         <a href={projectData.repositoryUrl} target="_blank">
                             <BsGithub />
                             Visitar Repositório
                         </a>
                     </div>
-                </div>
+                </>
             </Modal>
         </article>
     );

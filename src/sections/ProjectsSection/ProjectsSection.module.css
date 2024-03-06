@@ -96,13 +96,13 @@
   background: url(../../assets/slash.svg) no-repeat;
 }
 
-.projects_group {
+.projects_wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 6rem;
 }
 @media screen and (max-width: 768px) {
-  .projects_group {
+  .projects_wrapper {
     grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=ProjectsSection.module.css.map */

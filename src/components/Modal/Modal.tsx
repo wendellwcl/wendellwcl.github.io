@@ -1,7 +1,9 @@
 import { ReactElement } from "react";
+
+//Icons
 import { BsXLg } from "react-icons/bs";
 
-//Hooks
+//Custom Hooks
 import useModal from "../../hooks/useModal";
 
 //Styles
@@ -21,6 +23,7 @@ const Modal = ({ id, children }: Props) => {
                 className={styles.modal_fade}
                 onClick={() => closeModal(id)}
             ></div>
+
             <div className={styles.modal_container}>
                 <button
                     className={styles.btn_close}
@@ -28,6 +31,7 @@ const Modal = ({ id, children }: Props) => {
                 >
                     <BsXLg />
                 </button>
+
                 <div className={styles.modal_content}>{children}</div>
             </div>
         </div>

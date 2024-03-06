@@ -6,20 +6,11 @@
 
 .about_container {
     @include container;
-
-    @media screen and (max-width: 768px) {
-        min-height: initial;
-    }
-}
-
-.about_body {
     @include two-column-grid;
-    min-height: calc(100dvh - 96px);
     gap: 6.4rem;
 
     @media screen and (max-width: 768px) {
         min-height: initial;
-        grid-template-rows: auto;
     }
 }
 
@@ -44,7 +35,7 @@
 }
 
 .about_text {
-    .text_group {
+    .text_wrapper {
         .title {
             @include section_title;
         }

@@ -14,7 +14,7 @@ const HeroSection = () => {
         <section className={styles.hero_section}>
             <div className={styles.hero_container}>
                 <div className={styles.greeting_container}>
-                    <div className={styles.greeting_group}>
+                    <div className={styles.greeting_wrapper}>
                         <h1 className={styles.greeting}>
                             Olá,
                             <br />
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className={styles.img_container}>
-                    <div className={styles.badge_img_group}>
+                    <div className={styles.badge_img_wrapper}>
                         <img
                             className={styles.badge_img}
                             src={badgeImg}

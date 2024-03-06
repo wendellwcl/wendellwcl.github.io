@@ -52,7 +52,7 @@
             var(--color-4)
         )
         30;
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-top: none;
     border-left: none;
@@ -61,17 +61,18 @@
 
 @mixin btn-default {
     @include background-gradient-dual;
-    display: block;
-    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
     border: none;
     border-radius: 8px;
     color: var(--color-light);
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.2s;
 
-    &:hover {
-        transform: scale(1.1);
+    svg {
+        font-size: 1.2em;
+        margin-right: 0.8rem;
     }
 }
 

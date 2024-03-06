@@ -12,6 +12,7 @@ import SkillsSection from "./sections/SkillsSection/SkillsSection.tsx";
 import SvgGradient from "./components/SvgGradient/SvgGradient.tsx";
 
 function App() {
+    //Detect and apply user theme (darkmode or lightmode)
     useTheme();
 
     return (

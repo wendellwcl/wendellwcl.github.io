@@ -12,7 +12,7 @@
     @include section_title;
 }
 
-.projects_group {
+.projects_wrapper {
     @include two-column-grid;
     gap: 6rem;
 }

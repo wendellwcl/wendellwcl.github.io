@@ -1,3 +1,4 @@
+//Icons
 import {
     BiLogoAngular,
     BiLogoBootstrap,
@@ -161,7 +162,8 @@ const ProjectsSection = () => {
         <section className={styles.projects_section}>
             <div className={styles.projects_container}>
                 <h3 className={styles.projects_title}>Projetos</h3>
-                <div className={styles.projects_group}>
+
+                <div className={styles.projects_wrapper}>
                     {projects.map((project, index) => (
                         <ProjectCard key={index} projectData={project} />
                     ))}

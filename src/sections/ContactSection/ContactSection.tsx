@@ -1,3 +1,4 @@
+//Icons
 import {
     BsEnvelopeFill,
     BsGithub,
@@ -39,21 +40,23 @@ const ContactSection = () => {
         <section className={styles.contact_section}>
             <div className={styles.contact_container}>
                 <h3 className={styles.contact_title}>Contato</h3>
-                <div className={styles.contact_body}>
+
+                <div className={styles.contact_grid}>
                     <div className={styles.contact_text}>
-                        <div className={styles.text_group}>
+                        <div className={styles.text_wrapper}>
                             <p className={styles.text_highlight}>
                                 Envie sua mensagem agora mesmo!
                             </p>
                             <p className={styles.text}>
                                 Vamos conversar sobre seus projetos.
                             </p>
+
                             <div className={styles.contact_options}>
                                 <ul>
                                     {contacts.map((item) => (
                                         <li key={item.text}>
-                                            {item.element}
                                             <a href={item.link} target="_blank">
+                                                {item.element}
                                                 {item.text}
                                             </a>
                                         </li>

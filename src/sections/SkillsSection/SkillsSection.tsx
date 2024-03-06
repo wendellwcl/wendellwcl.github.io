@@ -1,4 +1,4 @@
-//Assets
+//Icons
 import {
     BiLogoAngular,
     BiLogoCss3,
@@ -58,13 +58,16 @@ const SkillsSection = () => {
         <section className={styles.skills_section}>
             <div className={styles.skills_container}>
                 <h3 className={styles.skills_title}>Principais Skills</h3>
-                <div className={styles.skills} id="skills">
-                    {skills.map((item) => (
-                        <div key={item.name} className={styles.skill_item}>
-                            {item.element}
-                            <span>{item.name}</span>
-                        </div>
-                    ))}
+
+                <div className={styles.skills_wrapper} id="skills">
+                    <div className={styles.skills}>
+                        {skills.map((item) => (
+                            <div key={item.name} className={styles.skill_item}>
+                                {item.element}
+                                <span>{item.name}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

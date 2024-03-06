@@ -93,17 +93,17 @@
   background: url(../../assets/slash.svg) no-repeat;
 }
 
-.contact_body {
+.contact_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 @media screen and (max-width: 768px) {
-  .contact_body {
+  .contact_grid {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 768px) {
-  .contact_body {
+  .contact_grid {
     grid-template-rows: auto;
   }
 }
@@ -113,17 +113,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-  .contact_img {
-    display: none;
-  }
-}
-.contact_img img {
-  display: block;
-  width: 100%;
-  max-width: 520px;
 }
 
 .contact_text .text_highlight {
@@ -144,15 +133,12 @@
 .contact_options ul li {
   -o-border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
      border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   border-top: none;
   border-left: none;
   border-right: none;
-  display: flex;
-  align-items: center;
   font-weight: bold;
-  color: var(--text-color);
   padding: 0.8rem 0;
 }
 .contact_options ul li:not(:last-child) {
@@ -164,12 +150,24 @@
     font-size: 1.4rem;
   }
 }
-.contact_options ul li svg {
-  display: block;
-  font-size: 2rem;
-  margin-right: 1.2rem;
-  fill: url(#my-cool-gradient) var(--color-3);
-}
 .contact_options ul li a {
-  color: inherit;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+.contact_options ul li a svg {
+  font-size: 1.6em;
+  margin-right: 1rem;
+  fill: url(#fill-gradient) var(--color-3);
+}
+
+@media screen and (max-width: 768px) {
+  .contact_img {
+    display: none;
+  }
+}
+.contact_img img {
+  display: block;
+  width: 100%;
+  max-width: 520px;
 }/*# sourceMappingURL=ContactSection.module.css.map */

@@ -3,7 +3,7 @@
 .card_container {
     background-color: var(--background-color-010);
     width: 100%;
-    border-radius: 1.6rem;
+    border-radius: 0.8rem;
     overflow: hidden;
 }
 
@@ -18,21 +18,16 @@
     cursor: zoom-in;
 
     &:hover {
-        .img_filter {
-            opacity: 0;
-        }
-
         img {
-            scale: 1.1;
+            transform: scale(1.1);
         }
     }
 
     img {
         display: block;
         width: 100%;
-        aspect-ratio: 16/9;
         object-fit: cover;
-        transition: all 0.2s;
+        transition: all 0.3s;
     }
 }
 
@@ -53,7 +48,7 @@
         &:hover {
             svg {
                 transform: scale(1.5);
-                fill: url(#my-cool-gradient) var(--color-3);
+                fill: url(#fill-gradient) var(--color-3);
             }
         }
     }
@@ -61,7 +56,7 @@
     svg {
         font-size: 2.4rem;
         pointer-events: none;
-        transition: all 0.2s;
+        transition: all 0.3s;
     }
 }
 
@@ -78,18 +73,15 @@
 .btn_container {
     button {
         @include btn-default;
-        display: flex;
-        align-items: center;
-        font-size: 1.4rem;
+        transition: all 0.2s;
 
-        svg {
-            font-size: 2rem;
-            margin-right: 0.4rem;
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
 
-.links {
+.modal_links {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -97,16 +89,6 @@
 
     a {
         @include btn-default;
-        display: flex;
-        align-items: center;
         justify-content: center;
-
-        &:hover {
-            transform: scale(1);
-        }
-
-        svg {
-            margin-right: 0.4rem;
-        }
     }
 }

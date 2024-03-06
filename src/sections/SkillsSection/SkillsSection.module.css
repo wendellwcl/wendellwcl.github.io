@@ -68,13 +68,10 @@
   max-width: 1320px;
   margin: 0 auto;
   padding: 4.8rem 3.2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 @media screen and (max-width: 768px) {
   .skills_container {
-    min-height: auto;
+    min-height: initial;
   }
 }
 
@@ -83,7 +80,6 @@
   position: relative;
   left: 24px;
   margin-bottom: 3.6rem;
-  align-self: flex-start;
 }
 @media screen and (max-width: 768px) {
   .skills_title {
@@ -101,9 +97,13 @@
   background: url(../../assets/slash.svg) no-repeat;
 }
 
-.skills {
-  flex-grow: 1;
-  display: grid;
+.skills_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills_wrapper .skills {
+  display: inline-grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 8rem;
@@ -111,42 +111,40 @@
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  .skills {
-    flex-grow: 0;
+  .skills_wrapper .skills {
     gap: 3.6rem;
   }
 }
-.skills .skill_item {
+.skills_wrapper .skills .skill_item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.skills .skill_item svg {
-  fill: url(#my-cool-gradient) var(--color-3);
+.skills_wrapper .skills .skill_item svg {
+  fill: url(#fill-gradient) var(--color-3);
   font-size: 12rem;
   margin-bottom: 0.4rem;
-  cursor: pointer;
   transition: all 0.2s;
 }
-.skills .skill_item svg:hover {
+.skills_wrapper .skills .skill_item svg:hover {
   transform: scale(1.1);
 }
 @media screen and (max-width: 768px) {
-  .skills .skill_item svg {
+  .skills_wrapper .skills .skill_item svg {
     font-size: 8rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .skills .skill_item svg {
+  .skills_wrapper .skills .skill_item svg {
     font-size: 6rem;
   }
 }
-.skills .skill_item span {
+.skills_wrapper .skills .skill_item span {
   font-weight: bold;
   font-size: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .skills .skill_item span {
+  .skills_wrapper .skills .skill_item span {
     font-size: 1.4rem;
   }
 }/*# sourceMappingURL=SkillsSection.module.css.map */

@@ -84,11 +84,11 @@
   justify-content: center;
 }
 
-.greeting_container .greeting_group {
+.greeting_container .greeting_wrapper {
   animation: slide_top 1.2s both cubic-bezier(0, 0, 0, 1);
 }
 @media screen and (max-width: 768px) {
-  .greeting_container .greeting_group {
+  .greeting_container .greeting_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,17 +148,19 @@
 }
 .greeting_container .professional_networks .btn {
   background-image: linear-gradient(90deg, var(--color-2), var(--color-3));
-  display: block;
-  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
   border: none;
   border-radius: 8px;
   color: var(--color-light);
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s;
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+}
+.greeting_container .professional_networks .btn svg {
+  font-size: 1.2em;
+  margin-right: 0.8rem;
 }
 .greeting_container .professional_networks .btn:hover {
   transform: scale(1.1);
@@ -169,35 +171,37 @@
   align-items: center;
   justify-content: center;
 }
-.img_container .badge_img_group {
+.img_container .badge_img_wrapper {
   position: relative;
   animation: badge 1.2s 0.2s both cubic-bezier(0, 0, 0, 1);
 }
-.img_container .badge_img_group .badge_img {
-  position: relative;
+.img_container .badge_img_wrapper .badge_img {
   display: block;
-  aspect-ratio: 1/1;
   width: 100%;
   max-width: 480px;
+  aspect-ratio: 1/1;
 }
 @media screen and (max-width: 768px) {
-  .img_container .badge_img_group .badge_img {
+  .img_container .badge_img_wrapper .badge_img {
     max-width: 320px;
   }
 }
-.img_container .badge_img_group .arrow_img {
+.img_container .badge_img_wrapper .arrow_img {
   position: absolute;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   display: block;
-  width: 28px;
+  width: 40px;
   aspect-ratio: 1/1;
   animation: 0.8s both 0.5s cubic-bezier(0, 0, 0, 1.25);
 }
-.img_container .badge_img_group .arrow_img[class*=left] {
+@media screen and (max-width: 768px) {
+  .img_container .badge_img_wrapper .arrow_img {
+    width: 28px;
+  }
+}
+.img_container .badge_img_wrapper .arrow_img[class*=left] {
   animation-name: arrow_left;
 }
-.img_container .badge_img_group .arrow_img[class*=right] {
+.img_container .badge_img_wrapper .arrow_img[class*=right] {
   animation-name: arrow_right;
 }/*# sourceMappingURL=HeroSection.module.css.map */
