@@ -13,12 +13,14 @@ interface Props {
 const Carousel = ({ children }: Props) => {
     const carouselRef = useRef<HTMLDivElement>(null);
 
+    //Preparing carousel and adding necessary classes
     useLayoutEffect(() => {
         const { firstImg, lastImg } = getImgsElements();
         firstImg.classList.add("selected");
         carouselRef.current?.prepend(lastImg);
     }, []);
 
+    //Get the first and last img elements
     function getImgsElements() {
         const imgsArr = carouselRef.current?.children;
         const firstImg = imgsArr![0];
@@ -27,6 +29,7 @@ const Carousel = ({ children }: Props) => {
         return { firstImg, lastImg };
     }
 
+    //Perform carousel actions
     function handleArrowClick(action: string) {
         const { firstImg, lastImg } = getImgsElements();
 
