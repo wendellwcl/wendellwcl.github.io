@@ -123,12 +123,11 @@
   width: 0.8em;
   height: 1.2em;
   position: absolute;
-  top: 0px;
+  top: -4px;
   left: -24px;
   background: url(../../assets/slash.svg) no-repeat;
 }
 .about_text .text_wrapper .text {
-  word-spacing: 0.4rem;
   line-height: 2.4rem;
 }
 .about_text .text_wrapper .text .highlight {

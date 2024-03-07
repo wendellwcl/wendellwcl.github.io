@@ -91,7 +91,7 @@
   width: 0.8em;
   height: 1.2em;
   position: absolute;
-  top: 0px;
+  top: -4px;
   left: -24px;
   background: url(../../assets/slash.svg) no-repeat;
 }
