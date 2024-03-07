@@ -22,7 +22,7 @@ const HeroSection = () => {
                         </h1>
 
                         <h2 className={styles.role}>
-                            &lt; Desenvolvedor Front-End /&gt;
+                            &lt;Desenvolvedor Front-End /&gt;
                         </h2>
 
                         <p className={styles.graduation}>

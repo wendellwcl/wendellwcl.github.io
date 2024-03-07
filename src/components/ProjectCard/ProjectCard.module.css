@@ -130,7 +130,7 @@
 }
 
 .btn_container button {
-  background-image: linear-gradient(90deg, var(--color-2), var(--color-3));
+  background-image: linear-gradient(90deg, var(--color-2) 10%, var(--color-3) 90%);
   display: flex;
   align-items: center;
   padding: 8px 12px;
@@ -156,7 +156,7 @@
   padding: 1.6rem;
 }
 .modal_links a {
-  background-image: linear-gradient(90deg, var(--color-2), var(--color-3));
+  background-image: linear-gradient(90deg, var(--color-2) 10%, var(--color-3) 90%);
   display: flex;
   align-items: center;
   padding: 8px 12px;

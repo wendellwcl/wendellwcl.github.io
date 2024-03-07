@@ -127,10 +127,8 @@
   }
 }
 .contact_text .text {
-  margin-bottom: 2.4rem;
-}
-
-.contact_options ul li {
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
   -o-border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
      border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
   border-width: 1px;
@@ -138,6 +136,9 @@
   border-top: none;
   border-left: none;
   border-right: none;
+}
+
+.contact_options ul li {
   font-weight: bold;
   padding: 0.8rem 0;
 }

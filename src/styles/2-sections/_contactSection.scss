@@ -37,14 +37,15 @@
     }
 
     .text {
-        margin-bottom: 2.4rem;
+        padding-bottom: 1.2rem;
+        margin-bottom: 1.2rem;
+        @include gradient-border-bottom;
     }
 }
 
 .contact_options {
     ul {
         li {
-            @include gradient-border-bottom;
             font-weight: bold;
             padding: 0.8rem 0;
 
