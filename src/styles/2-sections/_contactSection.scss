@@ -11,6 +11,8 @@
 
 .contact_grid {
     @include two-column-grid;
+    gap: 4rem;
+    align-items: flex-start;
 
     @media screen and (max-width: 768px) {
         grid-template-rows: auto;
@@ -18,7 +20,7 @@
 }
 
 .contact_text,
-.contact_img {
+.form_container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,7 +39,7 @@
     }
 
     .text {
-        padding-bottom: 1.2rem;
+        padding-bottom: 2.4rem;
         margin-bottom: 1.2rem;
         @include gradient-border-bottom;
     }
@@ -48,10 +50,6 @@
         li {
             font-weight: bold;
             padding: 0.8rem 0;
-
-            &:not(:last-child) {
-                margin-bottom: 1.2rem;
-            }
 
             @media screen and (max-width: 480px) {
                 font-weight: normal;
@@ -73,14 +71,94 @@
     }
 }
 
-.contact_img {
-    @media screen and (max-width: 768px) {
-        display: none;
+.form_container {
+    form {
+        width: 100%;
+        max-width: 420px;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 38px 38px auto 38px;
+        gap: 1.6rem;
+    }
+}
+
+.input_container {
+    width: 100%;
+    position: relative;
+
+    .input_field {
+        width: 100%;
+        height: 100%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        color: var(--text-color);
+        background: var(--background-color-010);
+        border: 2px solid var(--color-3);
+        border-radius: 8px;
+        outline: none;
+        transition: all 0.3s;
+
+        &::placeholder {
+            font-size: 1.6rem;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        &:focus {
+            &::placeholder {
+                opacity: 1;
+            }
+
+            + .label {
+                top: -10px;
+                color: var(--text-color);
+                font-size: 1.4rem;
+            }
+        }
+
+        + .label {
+            &[class*="filled"] {
+                top: -10px;
+                color: var(--color-primary);
+                font-size: 1.4rem;
+            }
+        }
     }
 
-    img {
-        display: block;
-        width: 100%;
-        max-width: 520px;
+    textarea {
+        min-height: 120px;
+    }
+
+    .label {
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        padding: 0 2px;
+        color: var(--text-color);
+        z-index: 1;
+        transition: all 0.2s;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 100%;
+            height: 5px;
+            background: var(--background-color-010);
+            z-index: -1;
+        }
+    }
+}
+
+.form_btn {
+    @include btn-default;
+    width: 100%;
+    opacity: 1;
+    transition: all 0.2s;
+
+    &:disabled {
+        opacity: 0.75;
+        cursor: wait;
     }
 }
