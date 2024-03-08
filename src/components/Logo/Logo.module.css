@@ -1,0 +1,16 @@
+.logo_container {
+  position: relative;
+  width: 100%;
+}
+.logo_container .fill,
+.logo_container .text {
+  position: absolute;
+}
+.logo_container .fill {
+  fill: url(#fill-gradient);
+}
+.logo_container .text {
+  fill: var(--text-color);
+  width: 54%;
+  left: 28%;
+}/*# sourceMappingURL=Logo.module.css.map */
