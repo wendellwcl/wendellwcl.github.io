@@ -60,7 +60,7 @@ const SkillsSection = () => {
                 <h3 className={styles.skills_title}>Principais Skills</h3>
 
                 <div className={styles.skills_wrapper} id="skills">
-                    <div className={styles.skills}>
+                    <div className={`${styles.skills} scroll_animation`}>
                         {skills.map((item) => (
                             <div key={item.name} className={styles.skill_item}>
                                 {item.element}

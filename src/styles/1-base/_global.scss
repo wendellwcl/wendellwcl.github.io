@@ -14,3 +14,16 @@ body {
 * {
     transition: color 0.3s, background-color 0.3s;
 }
+
+.scroll_animation {
+    transform: translateX(-60px);
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 0.8s cubic-bezier(0, 0, 0, 1);
+
+    &[class*="show"] {
+        transform: translateX(0);
+        opacity: 1;
+        filter: blur(0);
+    }
+}

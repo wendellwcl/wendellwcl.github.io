@@ -6,12 +6,15 @@
 
 .about_container {
     @include container;
-    @include two-column-grid;
-    gap: 6.4rem;
 
     @media screen and (max-width: 768px) {
         min-height: initial;
     }
+}
+
+.about_wrapper {
+    @include two-column-grid;
+    gap: 6.4rem;
 }
 
 .about_img,

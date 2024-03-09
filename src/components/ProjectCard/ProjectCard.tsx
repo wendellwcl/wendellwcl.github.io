@@ -28,7 +28,7 @@ const ProjectCard = ({ projectData }: Props) => {
 
     return (
         <article className={styles.card_container}>
-            <div className={styles.card_body}>
+            <div className={`${styles.card_body} scroll_animation`}>
                 <div className={styles.img_container}>
                     <img
                         src={projectData.imgs[0]}

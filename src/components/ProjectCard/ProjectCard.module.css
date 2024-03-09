@@ -62,15 +62,11 @@
     left: 75%;
   }
 }
-.card_container {
+.card_body {
   background-color: var(--background-color-010);
   width: 100%;
   border-radius: 0.8rem;
   overflow: hidden;
-}
-
-.card_body {
-  width: 100%;
 }
 
 .img_container {

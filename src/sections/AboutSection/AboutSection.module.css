@@ -72,18 +72,21 @@
   max-width: 1320px;
   margin: 0 auto;
   padding: 10rem 3.2rem;
+}
+@media screen and (max-width: 768px) {
+  .about_container {
+    min-height: initial;
+  }
+}
+
+.about_wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 6.4rem;
 }
 @media screen and (max-width: 768px) {
-  .about_container {
+  .about_wrapper {
     grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 768px) {
-  .about_container {
-    min-height: initial;
   }
 }
 
