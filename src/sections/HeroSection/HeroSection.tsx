@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 //Assets
 import arrowLeft from "../../assets/arrow_left.svg";
 import arrowRight from "../../assets/arrow_right.svg";
-import badgeImg from "../../assets/badge.png";
+import badgeImg from "../../assets/badge_hero.png";
 
 //Styles
 import styles from "./HeroSection.module.css";

@@ -1,5 +1,5 @@
 //Assets
-import badge2 from "../../assets/badge2.png";
+import badgeImg from "../../assets/badge_about.png";
 
 //Styles
 import styles from "./AboutSection.module.css";
@@ -10,7 +10,7 @@ const AboutSection = () => {
             <div className={styles.about_container}>
                 <div className={styles.about_img}>
                     <img
-                        src={badge2}
+                        src={badgeImg}
                         alt="imagem de um crachá com a foto do desenvolvedor do site"
                     />
                 </div>
