@@ -51,11 +51,6 @@
             font-weight: bold;
             padding: 0.8rem 0;
 
-            @media screen and (max-width: 480px) {
-                font-weight: normal;
-                font-size: 1.4rem;
-            }
-
             a {
                 display: flex;
                 align-items: center;

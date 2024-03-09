@@ -68,14 +68,14 @@
             color: var(--text-color);
             text-align: end;
             cursor: pointer;
+
+            &.contact_btn {
+                @include btn-default;
+                padding: 8px 12px;
+                color: var(--color-light);
+            }
         }
     }
-}
-
-.contact_btn {
-    @include btn-default;
-    font-weight: initial;
-    padding: 4px 12px;
 }
 
 .nav_btn {

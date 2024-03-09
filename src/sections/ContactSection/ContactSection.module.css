@@ -144,12 +144,6 @@
   font-weight: bold;
   padding: 0.8rem 0;
 }
-@media screen and (max-width: 480px) {
-  .contact_options ul li {
-    font-weight: normal;
-    font-size: 1.4rem;
-  }
-}
 .contact_options ul li a {
   display: flex;
   align-items: center;
