@@ -159,7 +159,7 @@ const ProjectsSection = () => {
     ];
 
     return (
-        <section className={styles.projects_section}>
+        <section className={styles.projects_section} id="projects-section">
             <div className={styles.projects_container}>
                 <h3 className={styles.projects_title}>Projetos</h3>
 

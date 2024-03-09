@@ -11,7 +11,7 @@ import styles from "./HeroSection.module.css";
 
 const HeroSection = () => {
     return (
-        <section className={styles.hero_section}>
+        <section className={styles.hero_section} id="hero-section">
             <div className={styles.hero_container}>
                 <div className={styles.greeting_container}>
                     <div className={styles.greeting_wrapper}>

@@ -99,6 +99,10 @@ body {
   font-size: 1.6rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100dvh;
   width: 100%;

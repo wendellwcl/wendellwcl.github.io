@@ -6,7 +6,7 @@ import styles from "./AboutSection.module.css";
 
 const AboutSection = () => {
     return (
-        <section className={styles.about_section}>
+        <section className={styles.about_section} id="about-section">
             <div className={styles.about_container}>
                 <div className={styles.about_img}>
                     <img

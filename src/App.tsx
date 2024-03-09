@@ -9,6 +9,7 @@ import ProjectsSection from "./sections/ProjectsSection/ProjectsSection.tsx";
 import SkillsSection from "./sections/SkillsSection/SkillsSection.tsx";
 
 //Components
+import Header from "./components/Header/Header.tsx";
 import SvgGradient from "./components/SvgGradient/SvgGradient.tsx";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
     return (
         <>
+            <Header />
             <main>
                 <HeroSection />
                 <AboutSection />

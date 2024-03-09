@@ -55,7 +55,7 @@ const SkillsSection = () => {
     ];
 
     return (
-        <section className={styles.skills_section}>
+        <section className={styles.skills_section} id="skills-section">
             <div className={styles.skills_container}>
                 <h3 className={styles.skills_title}>Principais Skills</h3>
 

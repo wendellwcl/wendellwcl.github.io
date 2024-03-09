@@ -60,7 +60,7 @@ const ContactSection = () => {
     }
 
     return (
-        <section className={styles.contact_section}>
+        <section className={styles.contact_section} id="contact-section">
             <div className={styles.contact_container}>
                 <h3 className={styles.contact_title}>Contato</h3>
 
