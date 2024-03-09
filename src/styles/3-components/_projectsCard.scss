@@ -12,7 +12,10 @@
 }
 
 .img_container {
-    @include gradient-border-bottom;
+    @include gradient-border;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     width: 100%;
     overflow: hidden;
     cursor: zoom-in;

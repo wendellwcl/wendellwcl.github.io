@@ -41,7 +41,10 @@
     .text {
         padding-bottom: 2.4rem;
         margin-bottom: 1.2rem;
-        @include gradient-border-bottom;
+        @include gradient-border;
+        border-top: none;
+        border-left: none;
+        border-right: none;
     }
 }
 

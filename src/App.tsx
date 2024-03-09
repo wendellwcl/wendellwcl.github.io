@@ -9,6 +9,7 @@ import ProjectsSection from "./sections/ProjectsSection/ProjectsSection.tsx";
 import SkillsSection from "./sections/SkillsSection/SkillsSection.tsx";
 
 //Components
+import Footer from "./components/Footer/Footer.tsx";
 import Header from "./components/Header/Header.tsx";
 import SvgGradient from "./components/SvgGradient/SvgGradient.tsx";
 
@@ -26,6 +27,7 @@ function App() {
                 <ProjectsSection />
                 <ContactSection />
             </main>
+            <Footer />
             <SvgGradient />
         </>
     );

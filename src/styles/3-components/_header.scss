@@ -44,7 +44,10 @@
             width: 100%;
             transform: translate(0, 100%);
             background: var(--background-color-010);
-            @include gradient-border-bottom;
+            @include gradient-border;
+            border-top: none;
+            border-left: none;
+            border-right: none;
 
             ul {
                 flex-direction: column;
