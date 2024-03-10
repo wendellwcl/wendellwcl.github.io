@@ -18,6 +18,7 @@ function App() {
     //Detect and apply user theme (darkmode or lightmode)
     useTheme();
 
+    //Applying scroll animation logic
     useScrollAnimations();
 
     return (

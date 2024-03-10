@@ -13,7 +13,6 @@ const useScrollAnimations = () => {
 
     useLayoutEffect(() => {
         const elements = document.querySelectorAll(".scroll_animation");
-        console.log(elements);
         elements.forEach((el) => observer.observe(el));
     });
 };

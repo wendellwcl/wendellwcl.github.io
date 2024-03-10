@@ -1,58 +1,13 @@
-//Icons
-import {
-    BiLogoAngular,
-    BiLogoCss3,
-    BiLogoGit,
-    BiLogoGithub,
-    BiLogoHtml5,
-    BiLogoJavascript,
-    BiLogoReact,
-    BiLogoSass,
-    BiLogoTypescript,
-} from "react-icons/bi";
+import { useContext } from "react";
+
+//Contexts
+import { DataContext } from "../../contexts/DataContext";
 
 //Styles
 import styles from "./SkillsSection.module.css";
 
 const SkillsSection = () => {
-    const skills = [
-        {
-            name: "React",
-            element: <BiLogoReact />,
-        },
-        {
-            name: "Angular",
-            element: <BiLogoAngular />,
-        },
-        {
-            name: "TypeScript",
-            element: <BiLogoTypescript />,
-        },
-        {
-            name: "JavaScript",
-            element: <BiLogoJavascript />,
-        },
-        {
-            name: "HTML",
-            element: <BiLogoHtml5 />,
-        },
-        {
-            name: "CSS",
-            element: <BiLogoCss3 />,
-        },
-        {
-            name: "Sass",
-            element: <BiLogoSass />,
-        },
-        {
-            name: "Git",
-            element: <BiLogoGit />,
-        },
-        {
-            name: "Github",
-            element: <BiLogoGithub />,
-        },
-    ];
+    const { skills } = useContext(DataContext);
 
     return (
         <section className={styles.skills_section} id="skills-section">

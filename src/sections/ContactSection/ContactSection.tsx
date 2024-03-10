@@ -1,41 +1,15 @@
-import { useLayoutEffect, useRef } from "react";
+import { useContext, useLayoutEffect, useRef } from "react";
 
-//Icons
-import {
-    BsEnvelopeFill,
-    BsGithub,
-    BsLinkedin,
-    BsWhatsapp,
-} from "react-icons/bs";
+//Contexts
+import { DataContext } from "../../contexts/DataContext";
 
 //Styles
 import styles from "./ContactSection.module.css";
 
 const ContactSection = () => {
-    const submitBtnRef = useRef<HTMLButtonElement>(null);
+    const { contacts } = useContext(DataContext);
 
-    const contacts = [
-        {
-            element: <BsWhatsapp />,
-            link: "https://wa.me/5512988577185",
-            text: "(12) 98857-7185",
-        },
-        {
-            element: <BsEnvelopeFill />,
-            link: "mailto:wendell.wcl19@gmail.com",
-            text: "wendell.wcl19@gmail.com",
-        },
-        {
-            element: <BsLinkedin />,
-            link: "https://www.linkedin.com/in/wendellwcl/",
-            text: "linkedin.com/in/wendellwcl",
-        },
-        {
-            element: <BsGithub />,
-            link: "https://github.com/wendellwcl",
-            text: "github.com/wendellwcl",
-        },
-    ];
+    const submitBtnRef = useRef<HTMLButtonElement>(null);
 
     //Logic for controlling input field animations
     useLayoutEffect(() => {
