@@ -112,10 +112,6 @@ body {
   color: var(--text-color);
 }
 
-* {
-  transition: color 0.3s, background-color 0.3s;
-}
-
 .scroll_animation {
   transform: translateX(-60px);
   opacity: 0;

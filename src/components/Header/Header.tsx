@@ -6,7 +6,7 @@ import { BsList } from "react-icons/bs";
 //Components
 import Logo from "../Logo/Logo";
 
-//Styels
+//Styles
 import styles from "./Header.module.css";
 
 const Header = () => {
@@ -45,41 +45,44 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.header_container}>
                 <div className={styles.logo_container}>
-                    <a href="#hero-section">
+                    <a href="#">
                         <Logo />
                     </a>
                 </div>
 
                 <nav className={styles.navbar} ref={navRef}>
-                    <ul>
-                        <li>
+                    <ul className={styles.navlist}>
+                        <li className={styles.navitem}>
                             <a
+                                className={styles.navlink}
                                 href="#about-section"
                                 onClick={() => hideNavbar()}
                             >
                                 Sobre
                             </a>
                         </li>
-                        <li>
+                        <li className={styles.navitem}>
                             <a
+                                className={styles.navlink}
                                 href="#skills-section"
                                 onClick={() => hideNavbar()}
                             >
                                 Skills
                             </a>
                         </li>
-                        <li>
+                        <li className={styles.navitem}>
                             <a
+                                className={styles.navlink}
                                 href="#projects-section"
                                 onClick={() => hideNavbar()}
                             >
                                 Projetos
                             </a>
                         </li>
-                        <li>
+                        <li className={styles.navitem}>
                             <a
+                                className={`${styles.navlink} ${styles.contact_btn}`}
                                 href="#contact-section"
-                                className={styles.contact_btn}
                                 onClick={() => hideNavbar()}
                             >
                                 Contato
@@ -89,7 +92,7 @@ const Header = () => {
                 </nav>
 
                 <button
-                    className={styles.nav_btn}
+                    className={styles.nav_mobile_btn}
                     onClick={() => toggleNav()}
                     ref={navBtnRef}
                 >
