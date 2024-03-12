@@ -1,1 +1,115 @@
-@use "../../styles/2-sections/heroSection";
+@import "../../styles/0-helpers/helpers-dir";
+
+.hero_container {
+    @include container;
+    @include two-column-grid;
+    min-height: calc(100dvh - var(--header-height));
+    padding: 3.2rem;
+}
+
+.greeting_container,
+.img_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting_wrapper {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .greeting {
+        font-size: 6.4rem;
+        white-space: nowrap;
+        margin-bottom: 1.6rem;
+
+        @media screen and (max-width: 1064px) {
+            font-size: 4.8rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 5.6rem;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 3.2rem;
+        }
+
+        .name {
+            @include text-gradient-dual;
+        }
+    }
+
+    .role {
+        font-size: 2.4rem;
+        margin-bottom: 0.4rem;
+        @include text-gradient-dual;
+
+        @media screen and (max-width: 480px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    .graduation {
+        margin-bottom: 1.6rem;
+
+        @media screen and (max-width: 480px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    .professional_networks {
+        display: flex;
+        gap: 1.2rem;
+
+        .btn {
+            @include btn-default;
+            transition: all 0.2s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.badge_img_wrapper {
+    position: relative;
+    animation: badge 1.2s 0.5s both cubic-bezier(0, 0, 0, 1);
+
+    .badge_img {
+        display: block;
+        width: 100%;
+        max-width: 480px;
+        aspect-ratio: 1/1;
+
+        @media screen and (max-width: 768px) {
+            max-width: 320px;
+        }
+    }
+
+    .arrow_img {
+        position: absolute;
+        display: block;
+        width: 40px;
+        aspect-ratio: 1/1;
+        transform: translate(-50%, -50%);
+        animation: 1s both 0.6s cubic-bezier(0, 0, 0, 1.25);
+
+        &[class*="left"] {
+            animation-name: arrow_left;
+        }
+
+        &[class*="right"] {
+            animation-name: arrow_right;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 28px;
+        }
+    }
+}

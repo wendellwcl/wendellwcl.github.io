@@ -10,32 +10,30 @@
   --background-color: var(--color-light);
   --background-color-010: var(--color-light-010);
   --text-color: var(--color-dark);
+  --header-height: 91.4px;
 }
 
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 65px;
+  }
+}
 .dark-mode {
   --background-color: var(--color-dark);
   --background-color-010: var(--color-dark-010);
   --text-color: var(--color-light);
 }
 
-@keyframes slide_top {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 @keyframes badge {
   0% {
     opacity: 0;
     transform: scale(0.9) rotateY(45deg) translateY(20px);
+    filter: blur(2px);
   }
   100% {
     opacity: 1;
     transform: scale(1) rotateY(0deg) translateY(0px);
+    filter: blur(0);
   }
 }
 @keyframes arrow_left {
@@ -70,6 +68,8 @@
   padding: 10rem 3.2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  min-height: calc(100dvh - var(--header-height));
+  padding: 3.2rem;
 }
 @media screen and (max-width: 768px) {
   .hero_container {
@@ -84,44 +84,41 @@
   justify-content: center;
 }
 
-.greeting_container .greeting_wrapper {
-  animation: slide_top 1.2s both cubic-bezier(0, 0, 0, 1);
-}
 @media screen and (max-width: 768px) {
-  .greeting_container .greeting_wrapper {
+  .greeting_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-.greeting_container .greeting {
+.greeting_wrapper .greeting {
   font-size: 6.4rem;
   white-space: nowrap;
   margin-bottom: 1.6rem;
 }
 @media screen and (max-width: 1064px) {
-  .greeting_container .greeting {
+  .greeting_wrapper .greeting {
     font-size: 4.8rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .greeting_container .greeting {
+  .greeting_wrapper .greeting {
     font-size: 5.6rem;
     text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
-  .greeting_container .greeting {
+  .greeting_wrapper .greeting {
     font-size: 3.2rem;
   }
 }
-.greeting_container .greeting .name {
+.greeting_wrapper .greeting .name {
   background-image: linear-gradient(90deg, var(--color-2) 10%, var(--color-3) 90%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
-.greeting_container .role {
+.greeting_wrapper .role {
   font-size: 2.4rem;
   margin-bottom: 0.4rem;
   background-image: linear-gradient(90deg, var(--color-2) 10%, var(--color-3) 90%);
@@ -130,23 +127,23 @@
   color: transparent;
 }
 @media screen and (max-width: 480px) {
-  .greeting_container .role {
+  .greeting_wrapper .role {
     font-size: 1.6rem;
   }
 }
-.greeting_container .graduation {
+.greeting_wrapper .graduation {
   margin-bottom: 1.6rem;
 }
 @media screen and (max-width: 480px) {
-  .greeting_container .graduation {
+  .greeting_wrapper .graduation {
     font-size: 1.4rem;
   }
 }
-.greeting_container .professional_networks {
+.greeting_wrapper .professional_networks {
   display: flex;
   gap: 1.2rem;
 }
-.greeting_container .professional_networks .btn {
+.greeting_wrapper .professional_networks .btn {
   background-image: linear-gradient(90deg, var(--color-2) 10%, var(--color-3) 90%);
   display: flex;
   align-items: center;
@@ -159,50 +156,45 @@
   cursor: pointer;
   transition: all 0.2s;
 }
-.greeting_container .professional_networks .btn svg {
+.greeting_wrapper .professional_networks .btn svg {
   font-size: 1.2em;
   margin-right: 0.8rem;
 }
-.greeting_container .professional_networks .btn:hover {
+.greeting_wrapper .professional_networks .btn:hover {
   transform: scale(1.1);
 }
 
-.img_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.img_container .badge_img_wrapper {
+.badge_img_wrapper {
   position: relative;
-  animation: badge 1.2s 0.2s both cubic-bezier(0, 0, 0, 1);
+  animation: badge 1.2s 0.5s both cubic-bezier(0, 0, 0, 1);
 }
-.img_container .badge_img_wrapper .badge_img {
+.badge_img_wrapper .badge_img {
   display: block;
   width: 100%;
   max-width: 480px;
   aspect-ratio: 1/1;
 }
 @media screen and (max-width: 768px) {
-  .img_container .badge_img_wrapper .badge_img {
+  .badge_img_wrapper .badge_img {
     max-width: 320px;
   }
 }
-.img_container .badge_img_wrapper .arrow_img {
+.badge_img_wrapper .arrow_img {
   position: absolute;
-  transform: translate(-50%, -50%);
   display: block;
   width: 40px;
   aspect-ratio: 1/1;
-  animation: 0.8s both 0.5s cubic-bezier(0, 0, 0, 1.25);
+  transform: translate(-50%, -50%);
+  animation: 1s both 0.6s cubic-bezier(0, 0, 0, 1.25);
 }
-@media screen and (max-width: 768px) {
-  .img_container .badge_img_wrapper .arrow_img {
-    width: 28px;
-  }
-}
-.img_container .badge_img_wrapper .arrow_img[class*=left] {
+.badge_img_wrapper .arrow_img[class*=left] {
   animation-name: arrow_left;
 }
-.img_container .badge_img_wrapper .arrow_img[class*=right] {
+.badge_img_wrapper .arrow_img[class*=right] {
   animation-name: arrow_right;
+}
+@media screen and (max-width: 768px) {
+  .badge_img_wrapper .arrow_img {
+    width: 28px;
+  }
 }/*# sourceMappingURL=HeroSection.module.css.map */

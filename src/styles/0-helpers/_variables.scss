@@ -11,6 +11,11 @@
     --background-color: var(--color-light);
     --background-color-010: var(--color-light-010);
     --text-color: var(--color-dark);
+
+    --header-height: 91.4px;
+    @media screen and (max-width: 768px) {
+        --header-height: 65px;
+    }
 }
 
 .dark-mode {
