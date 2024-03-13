@@ -61,15 +61,13 @@
   }
 }
 .hero_container {
-  min-height: 100dvh;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 10rem 3.2rem;
+  padding: 4rem 3.2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   min-height: calc(100dvh - var(--header-height));
-  padding: 3.2rem;
 }
 @media screen and (max-width: 768px) {
   .hero_container {

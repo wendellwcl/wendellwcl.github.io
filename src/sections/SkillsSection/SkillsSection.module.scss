@@ -1,1 +1,69 @@
-@use "../../styles/2-sections/skillsSection";
+@import "../../styles/0-helpers/helpers-dir";
+
+.skills_section {
+    .section_anchor {
+        @include section-scroll-anchor;
+    }
+}
+
+.skills_container {
+    @include container;
+    min-height: initial;
+}
+
+.skills_title {
+    @include section_title;
+}
+
+.skills_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 6rem;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 768px) {
+            gap: 2.8rem;
+        }
+
+        .skill_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            svg {
+                fill: url(#fill-gradient) var(--color-2);
+                font-size: 12rem;
+                margin-bottom: 0.4rem;
+                transition: all 0.2s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 8rem;
+                }
+
+                @media screen and (max-width: 480px) {
+                    font-size: 6rem;
+                }
+            }
+
+            .skill_name {
+                font-weight: bold;
+                font-size: 1.6rem;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

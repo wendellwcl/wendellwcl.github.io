@@ -60,28 +60,34 @@
     left: 75%;
   }
 }
+.skills_section .section_anchor {
+  visibility: hidden;
+  display: block;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: calc(0px - var(--header-height));
+}
+
 .skills_container {
-  min-height: 100dvh;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 10rem 3.2rem;
-}
-@media screen and (max-width: 768px) {
-  .skills_container {
-    min-height: initial;
-  }
+  padding: 4rem 3.2rem;
+  min-height: initial;
 }
 
 .skills_title {
-  font-size: 4rem;
   position: relative;
   left: 24px;
+  font-size: 2.8rem;
   margin-bottom: 3.6rem;
 }
 @media screen and (max-width: 768px) {
   .skills_title {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
+    margin-bottom: 2.8rem;
+    left: 16px;
   }
 }
 .skills_title::before {
@@ -90,9 +96,14 @@
   width: 0.8em;
   height: 1.2em;
   position: absolute;
-  top: -4px;
+  top: -2px;
   left: -24px;
   background: url(../../assets/slash.svg) no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .skills_title::before {
+    left: -16px;
+  }
 }
 
 .skills_wrapper {
@@ -101,16 +112,16 @@
   justify-content: center;
 }
 .skills_wrapper .skills {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 8rem;
+  gap: 6rem;
   align-items: center;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .skills_wrapper .skills {
-    gap: 3.6rem;
+    gap: 2.8rem;
   }
 }
 .skills_wrapper .skills .skill_item {
@@ -119,7 +130,7 @@
   align-items: center;
 }
 .skills_wrapper .skills .skill_item svg {
-  fill: url(#fill-gradient) var(--color-3);
+  fill: url(#fill-gradient) var(--color-2);
   font-size: 12rem;
   margin-bottom: 0.4rem;
   transition: all 0.2s;
@@ -137,12 +148,12 @@
     font-size: 6rem;
   }
 }
-.skills_wrapper .skills .skill_item span {
+.skills_wrapper .skills .skill_item .skill_name {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 @media screen and (max-width: 768px) {
-  .skills_wrapper .skills .skill_item span {
+  .skills_wrapper .skills .skill_item .skill_name {
     font-size: 1.4rem;
   }
 }/*# sourceMappingURL=SkillsSection.module.css.map */

@@ -4,7 +4,6 @@
     @include container;
     @include two-column-grid;
     min-height: calc(100dvh - var(--header-height));
-    padding: 3.2rem;
 }
 
 .greeting_container,

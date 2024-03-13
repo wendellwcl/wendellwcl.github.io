@@ -65,11 +65,10 @@
 }
 
 .about_container {
-  min-height: 100dvh;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
-  padding: 10rem 3.2rem;
+  padding: 4rem 3.2rem;
 }
 @media screen and (max-width: 768px) {
   .about_container {
@@ -108,14 +107,16 @@
 }
 
 .about_text .text_wrapper .title {
-  font-size: 4rem;
   position: relative;
   left: 24px;
+  font-size: 2.8rem;
   margin-bottom: 3.6rem;
 }
 @media screen and (max-width: 768px) {
   .about_text .text_wrapper .title {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
+    margin-bottom: 2.8rem;
+    left: 16px;
   }
 }
 .about_text .text_wrapper .title::before {
@@ -124,9 +125,14 @@
   width: 0.8em;
   height: 1.2em;
   position: absolute;
-  top: -4px;
+  top: -2px;
   left: -24px;
   background: url(../../assets/slash.svg) no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .about_text .text_wrapper .title::before {
+    left: -16px;
+  }
 }
 .about_text .text_wrapper .text {
   line-height: 2.4rem;

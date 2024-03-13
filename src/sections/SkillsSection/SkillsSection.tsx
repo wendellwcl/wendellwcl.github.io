@@ -10,7 +10,8 @@ const SkillsSection = () => {
     const { skills } = useContext(DataContext);
 
     return (
-        <section className={styles.skills_section} id="skills-section">
+        <section className={styles.skills_section}>
+            <span className={styles.section_anchor} id="skills-section"></span>
             <div className={styles.skills_container}>
                 <h3 className={styles.skills_title}>Principais Skills</h3>
 
@@ -19,7 +20,9 @@ const SkillsSection = () => {
                         {skills.map((item) => (
                             <div key={item.name} className={styles.skill_item}>
                                 {item.element}
-                                <span>{item.name}</span>
+                                <span className={styles.skill_name}>
+                                    {item.name}
+                                </span>
                             </div>
                         ))}
                     </div>
