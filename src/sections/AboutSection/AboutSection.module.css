@@ -63,12 +63,24 @@
 .about_section {
   background-color: var(--background-color);
 }
+.about_section .section_anchor {
+  visibility: hidden;
+  display: block;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: calc(0px - var(--header-height));
+}
 
 .about_container {
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
   padding: 4rem 3.2rem;
+  min-height: calc(100dvh - var(--header-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 768px) {
   .about_container {
