@@ -1,1 +1,26 @@
-@use "../../styles/2-sections/projectsSection";
+@import "../../styles/0-helpers/helpers-dir";
+
+.projects_section {
+    background-color: var(--background-color);
+
+    .section_anchor {
+        @include section-scroll-anchor;
+    }
+}
+
+.projects_container {
+    @include container;
+}
+
+.projects_title {
+    @include section_title;
+}
+
+.projects_wrapper {
+    @include two-column-grid;
+    gap: 8rem;
+
+    @media screen and (max-width: 768px) {
+        gap: 3.2rem;
+    }
+}

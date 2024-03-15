@@ -13,7 +13,11 @@ const ProjectsSection = () => {
     const { projects } = useContext(DataContext);
 
     return (
-        <section className={styles.projects_section} id="projects-section">
+        <section className={styles.projects_section}>
+            <span
+                className={styles.section_anchor}
+                id="projects-section"
+            ></span>
             <div className={styles.projects_container}>
                 <h3 className={styles.projects_title}>Projetos</h3>
 

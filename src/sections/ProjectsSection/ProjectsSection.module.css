@@ -63,6 +63,14 @@
 .projects_section {
   background-color: var(--background-color);
 }
+.projects_section .section_anchor {
+  visibility: hidden;
+  display: block;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: calc(0px - var(--header-height));
+}
 
 .projects_container {
   width: 100%;
@@ -108,5 +116,10 @@
 @media screen and (max-width: 768px) {
   .projects_wrapper {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects_wrapper {
+    gap: 3.2rem;
   }
 }/*# sourceMappingURL=ProjectsSection.module.css.map */
