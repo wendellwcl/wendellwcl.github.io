@@ -1,6 +1,13 @@
 import { useLayoutEffect } from "react";
 
 const useScrollAnimations = () => {
+    //Get elements
+    useLayoutEffect(() => {
+        const elements = document.querySelectorAll(".scroll_animation");
+        elements.forEach((el) => observer.observe(el));
+    });
+
+    //Logic that executes the animation
     const observer = new IntersectionObserver((entries) =>
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -10,11 +17,6 @@ const useScrollAnimations = () => {
             }
         })
     );
-
-    useLayoutEffect(() => {
-        const elements = document.querySelectorAll(".scroll_animation");
-        elements.forEach((el) => observer.observe(el));
-    });
 };
 
 export default useScrollAnimations;
