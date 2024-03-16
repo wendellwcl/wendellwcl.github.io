@@ -12,7 +12,7 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.footer_container}>
                 <div className={styles.logo_container}>
-                    <a href="#hero-section">
+                    <a href="#">
                         <Logo />
                     </a>
                 </div>
