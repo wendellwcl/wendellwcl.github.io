@@ -10,7 +10,7 @@ const ContactSection = () => {
         <section className={styles.contact_section}>
             <span className={styles.section_anchor} id="contact-section"></span>
 
-            <div className={styles.contact_container}>
+            <div className={`${styles.contact_container} scroll_animation`}>
                 <h3 className={styles.contact_title}>Contato</h3>
 
                 <div className={styles.contact_wrapper}>
