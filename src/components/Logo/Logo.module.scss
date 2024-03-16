@@ -1,1 +1,22 @@
-@use "../../styles//3-components/logo";
+.logo_container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 19/3;
+
+    .fill,
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .fill {
+        fill: url(#fill-gradient);
+    }
+
+    .text {
+        fill: var(--text-color);
+        width: 54%;
+        left: 28%;
+    }
+}
