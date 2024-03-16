@@ -1,0 +1,94 @@
+:root {
+  --color-dark: #141417;
+  --color-dark-010: #29282b;
+  --color-light: #ffffff;
+  --color-light-010: #e1e1e1;
+  --color-1: #6acee3;
+  --color-2: #845eff;
+  --color-3: #bc56ff;
+  --color-4: #d44eff;
+  --background-color: var(--color-light);
+  --background-color-010: var(--color-light-010);
+  --text-color: var(--color-dark);
+  --header-height: 91.4px;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 65px;
+  }
+}
+.dark-mode {
+  --background-color: var(--color-dark);
+  --background-color-010: var(--color-dark-010);
+  --text-color: var(--color-light);
+}
+
+@keyframes badge {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateY(45deg) translateY(20px);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg) translateY(0px);
+    filter: blur(0);
+  }
+}
+@keyframes arrow_left {
+  0% {
+    opacity: 0;
+    top: 35%;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    top: 30%;
+    left: 15%;
+  }
+}
+@keyframes arrow_right {
+  0% {
+    opacity: 0;
+    top: 70%;
+    left: 70%;
+  }
+  100% {
+    opacity: 1;
+    top: 75%;
+    left: 75%;
+  }
+}
+.contact_form {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 38px 38px auto 38px;
+  gap: 1.6rem;
+}
+
+.form_btn {
+  background-image: linear-gradient(90deg, var(--color-2) 10%, var(--color-3) 90%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  color: var(--color-light);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.form_btn svg {
+  font-size: 1.2em;
+  margin-right: 0.8rem;
+}
+.form_btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}/*# sourceMappingURL=ContactForm.module.css.map */
