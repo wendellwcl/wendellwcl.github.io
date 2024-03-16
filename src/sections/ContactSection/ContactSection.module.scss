@@ -1,1 +1,60 @@
-@use "../../styles/2-sections/contactSection";
+@import "../../styles/0-helpers/helpers-dir";
+
+.contact_section {
+    .section_anchor {
+        @include section-scroll-anchor;
+    }
+}
+
+.contact_container {
+    @include container;
+}
+
+.contact_title {
+    @include section_title;
+}
+
+.contact_wrapper {
+    @include two-column-grid;
+    gap: 4rem;
+    padding: 6rem 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+}
+
+.text_container,
+.form_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_wrapper {
+    .text {
+        padding-bottom: 1.6rem;
+        margin-bottom: 3.2rem;
+        @include gradient-border;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        .text_highlight {
+            display: block;
+            font-weight: bold;
+            font-size: 2.4rem;
+            margin-bottom: 0.4rem;
+
+            @media screen and (max-width: 768px) {
+                font-size: 2rem;
+            }
+        }
+
+        .text_secondary {
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}
