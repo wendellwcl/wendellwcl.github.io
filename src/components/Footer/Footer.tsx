@@ -19,18 +19,24 @@ const Footer = () => {
 
                 <div className={styles.social_media_container}>
                     <a
+                        className={styles.social_media_link}
                         href="https://www.instagram.com/wendell.wcl/"
                         target="_blank"
                     >
                         <BsInstagram />
                     </a>
                     <a
+                        className={styles.social_media_link}
                         href="https://www.linkedin.com/in/wendellwcl/"
                         target="_blank"
                     >
                         <BsLinkedin />
                     </a>
-                    <a href="https://github.com/wendellwcl" target="_blank">
+                    <a
+                        className={styles.social_media_link}
+                        href="https://github.com/wendellwcl"
+                        target="_blank"
+                    >
                         <BsGithub />
                     </a>
                 </div>

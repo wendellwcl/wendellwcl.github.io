@@ -75,9 +75,6 @@
   max-width: 1320px;
   margin: 0 auto;
   padding: 4rem 3.2rem;
-  min-height: initial;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -95,7 +92,7 @@
   justify-content: center;
   gap: 0.8rem;
 }
-.social_media_container a {
+.social_media_container .social_media_link {
   padding: 0.8rem;
   display: flex;
   align-items: center;
@@ -103,10 +100,10 @@
   font-size: 2.4rem;
 }
 @media screen and (max-width: 768px) {
-  .social_media_container a {
+  .social_media_container .social_media_link {
     font-size: 2rem;
   }
 }
-.social_media_container a svg {
+.social_media_container .social_media_link svg {
   fill: url(#fill-gradient) var(--color-3);
 }/*# sourceMappingURL=Footer.module.css.map */
