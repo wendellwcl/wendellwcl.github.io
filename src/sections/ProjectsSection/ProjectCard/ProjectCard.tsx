@@ -4,11 +4,11 @@ import { ReactElement } from "react";
 import { BsFillEyeFill, BsGithub, BsWindow } from "react-icons/bs";
 
 //Custom Hooks
-import useModal from "../../hooks/useModal";
+import useModal from "../../../hooks/useModal";
 
 //Components
-import Carousel from "../Carousel/Carousel";
-import Modal from "../Modal/Modal";
+import Carousel from "../../../components/Carousel/Carousel";
+import Modal from "../../../components/Modal/Modal";
 
 //Styles
 import styles from "./ProjectCard.module.css";
@@ -40,7 +40,11 @@ const ProjectCard = ({ projectData }: Props) => {
                 <div className={styles.card_infos}>
                     <div className={styles.technologies}>
                         {projectData.technologies.map((item, index) => (
-                            <span title={item.name} key={index}>
+                            <span
+                                className={styles.technology_item}
+                                title={item.name}
+                                key={index}
+                            >
                                 {item.icon}
                             </span>
                         ))}
@@ -69,13 +73,21 @@ const ProjectCard = ({ projectData }: Props) => {
                         ))}
                     </Carousel>
 
-                    <div className={styles.modal_links}>
-                        <a href={projectData.liveUrl} target="_blank">
+                    <div className={styles.modal_links_container}>
+                        <a
+                            className={styles.modal_links}
+                            href={projectData.liveUrl}
+                            target="_blank"
+                        >
                             <BsWindow />
                             Acessar Projeto
                         </a>
 
-                        <a href={projectData.repositoryUrl} target="_blank">
+                        <a
+                            className={styles.modal_links}
+                            href={projectData.repositoryUrl}
+                            target="_blank"
+                        >
                             <BsGithub />
                             Visitar Repositório
                         </a>

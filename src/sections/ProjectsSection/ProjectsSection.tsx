@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { DataContext } from "../../contexts/DataContext";
 
 //Components
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import ProjectCard from "./ProjectCard/ProjectCard";
 
 //Styles
 import styles from "./ProjectsSection.module.css";
