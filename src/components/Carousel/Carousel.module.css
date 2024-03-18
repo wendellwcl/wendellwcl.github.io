@@ -95,6 +95,9 @@
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1.2rem;
   background: transparent;
   font-size: 6rem;
@@ -115,5 +118,5 @@
   right: 0;
 }
 .btn_action svg {
-  fill: url(#fill-gradient) var(--color-3);
+  fill: url(#fill-gradient) var(--color-2);
 }/*# sourceMappingURL=Carousel.module.css.map */
