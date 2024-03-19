@@ -1,11 +1,33 @@
-import { useLayoutEffect } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const useScrollAnimations = () => {
-    //Get elements
+    const [elementsArr, setElementsArr] = useState<NodeListOf<Element> | null>(
+        null
+    );
+
+    //Get and set elements
     useLayoutEffect(() => {
         const elements = document.querySelectorAll(".scroll_animation");
-        elements.forEach((el) => observer.observe(el));
-    });
+        setElementsArr(elements);
+    }, []);
+
+    //Executing animation control logic
+    useEffect(() => {
+        handleObserver();
+
+        window.addEventListener("resize", () => {
+            handleObserver();
+        });
+    }, [elementsArr]);
+
+    //Enable and disable animation
+    const handleObserver = () => {
+        if (window.innerWidth > 768) {
+            elementsArr?.forEach((el) => observer.observe(el));
+        } else {
+            elementsArr?.forEach((el) => observer.unobserve(el));
+        }
+    };
 
     //Logic that executes the animation
     const observer = new IntersectionObserver((entries) =>
