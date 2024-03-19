@@ -13,14 +13,16 @@ body {
 }
 
 .scroll_animation {
-    transform: translateX(-60px);
-    opacity: 0;
-    filter: blur(5px);
-    transition: all 0.8s cubic-bezier(0, 0, 0, 1);
+    @media screen and (min-width: 768px) {
+        transform: translateX(-60px);
+        opacity: 0;
+        filter: blur(5px);
+        transition: all 0.8s cubic-bezier(0, 0, 0, 1);
 
-    &[class*="show"] {
-        transform: translateX(0);
-        opacity: 1;
-        filter: blur(0);
+        &[class*="show"] {
+            transform: translateX(0);
+            opacity: 1;
+            filter: blur(0);
+        }
     }
 }
