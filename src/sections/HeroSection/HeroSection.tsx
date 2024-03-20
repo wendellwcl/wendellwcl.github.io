@@ -1,10 +1,11 @@
 //Icons
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsFileTextFill, BsTelephoneFill } from "react-icons/bs";
 
 //Assets
 import arrowLeft from "../../assets/arrow_left.svg";
 import arrowRight from "../../assets/arrow_right.svg";
 import badgeImg from "../../assets/badge_hero.png";
+import resume from "../../assets/Curriculo-Wendell.pdf";
 
 //Styles
 import styles from "./HeroSection.module.css";
@@ -29,22 +30,18 @@ const HeroSection = () => {
                             3º semestre - Sistemas para internet
                         </p>
 
-                        <div className={styles.professional_networks}>
+                        <div className={styles.btn_container}>
                             <a
                                 className={styles.btn}
-                                href="https://www.linkedin.com/in/wendellwcl/"
+                                href={resume}
                                 target="_blank"
                             >
-                                <BsLinkedin />
-                                Linkedin
+                                <BsFileTextFill />
+                                Curriculo
                             </a>
-                            <a
-                                className={styles.btn}
-                                href="https://github.com/wendellwcl"
-                                target="_blank"
-                            >
-                                <BsGithub />
-                                Github
+                            <a className={styles.btn} href="#contact-section">
+                                <BsTelephoneFill />
+                                Contato
                             </a>
                         </div>
                     </div>

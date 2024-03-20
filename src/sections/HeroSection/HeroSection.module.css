@@ -137,11 +137,11 @@
     font-size: 1.4rem;
   }
 }
-.greeting_wrapper .professional_networks {
+.greeting_wrapper .btn_container {
   display: flex;
   gap: 1.2rem;
 }
-.greeting_wrapper .professional_networks .btn {
+.greeting_wrapper .btn_container .btn {
   background-image: linear-gradient(90deg, var(--color-2) 10%, var(--color-3) 90%);
   display: flex;
   align-items: center;
@@ -152,14 +152,10 @@
   color: var(--color-light);
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.2s;
 }
-.greeting_wrapper .professional_networks .btn svg {
+.greeting_wrapper .btn_container .btn svg {
   font-size: 1.2em;
   margin-right: 0.8rem;
-}
-.greeting_wrapper .professional_networks .btn:hover {
-  transform: scale(1.1);
 }
 
 .badge_img_wrapper {

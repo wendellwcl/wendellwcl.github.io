@@ -1,5 +1,9 @@
+//Icons
+import { BsFileTextFill } from "react-icons/bs";
+
 //Assets
 import badgeImg from "../../assets/badge_about.png";
+import resume from "../../assets/Curriculo-Wendell.pdf";
 
 //Styles
 import styles from "./AboutSection.module.css";
@@ -49,6 +53,15 @@ const AboutSection = () => {
                                 </span>
                                 .
                             </p>
+
+                            <a
+                                href={resume}
+                                target="_blank"
+                                className={styles.about_resume}
+                            >
+                                <BsFileTextFill />
+                                Ver Curriculo
+                            </a>
                         </div>
                     </div>
                 </div>

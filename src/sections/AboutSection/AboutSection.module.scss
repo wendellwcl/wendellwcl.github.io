@@ -53,6 +53,7 @@
 
         .text {
             line-height: 2.4rem;
+            margin-bottom: 3.2rem;
 
             .highlight {
                 @include text-gradient-dual;
@@ -60,4 +61,8 @@
             }
         }
     }
+}
+
+.about_resume {
+    @include btn-default;
 }

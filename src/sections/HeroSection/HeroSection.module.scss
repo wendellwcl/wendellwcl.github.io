@@ -61,17 +61,12 @@
         }
     }
 
-    .professional_networks {
+    .btn_container {
         display: flex;
         gap: 1.2rem;
 
         .btn {
             @include btn-default;
-            transition: all 0.2s;
-
-            &:hover {
-                transform: scale(1.1);
-            }
         }
     }
 }
