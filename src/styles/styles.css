@@ -100,11 +100,77 @@ body {
   font-size: 1.6rem;
 }
 
+:root {
+  --color-dark: #0e0a1c;
+  --color-dark-010: #362e4f;
+  --color-light: #ebe5ff;
+  --color-light-010: #ded4ff;
+  --color-1: #6acee3;
+  --color-2: #825cff;
+  --color-3: #bc56ff;
+  --color-4: #d44eff;
+  --background-color: var(--color-light);
+  --background-color-010: var(--color-light-010);
+  --text-color: var(--color-dark);
+  --header-height: 91.4px;
+  --footer-height: 120px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--color-dark);
+    --background-color-010: var(--color-dark-010);
+    --text-color: var(--color-light);
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 65px;
+    --footer-height: 116px;
+  }
+}
+@keyframes badge {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotateY(45deg) translateY(20px);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg) translateY(0px);
+    filter: blur(0);
+  }
+}
+@keyframes arrow_left {
+  0% {
+    opacity: 0;
+    top: 35%;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    top: 30%;
+    left: 15%;
+  }
+}
+@keyframes arrow_right {
+  0% {
+    opacity: 0;
+    top: 70%;
+    left: 70%;
+  }
+  100% {
+    opacity: 1;
+    top: 75%;
+    left: 75%;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
   min-height: 100vh;
   width: 100%;
   min-width: 320px;
@@ -112,10 +178,9 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   padding-top: var(--header-height);
-  position: relative;
 }
 
-body:before {
+body::before {
   content: "";
   position: absolute;
   top: 0;
@@ -124,6 +189,8 @@ body:before {
   height: 100%;
   background: var(--background-color) url("src/assets/noise_bg.png");
   opacity: 0.2;
+  z-index: -1;
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
