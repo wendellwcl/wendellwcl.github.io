@@ -119,6 +119,14 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .greeting_wrapper .greeting .name {
+    background-image: initial;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    color: var(--color-2);
+  }
+}
 .greeting_wrapper .role {
   font-size: 2.4rem;
   margin-bottom: 0.4rem;
@@ -126,6 +134,14 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .greeting_wrapper .role {
+    background-image: initial;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    color: var(--color-2);
+  }
 }
 @media screen and (max-width: 480px) {
   .greeting_wrapper .role {
@@ -159,6 +175,12 @@
 .greeting_wrapper .btn_container .btn svg {
   font-size: 1.2em;
   margin-right: 0.8rem;
+}
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .greeting_wrapper .btn_container .btn {
+    background-image: initial;
+    background-color: var(--color-2);
+  }
 }
 
 .badge_img_wrapper {

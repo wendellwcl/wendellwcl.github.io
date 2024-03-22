@@ -132,13 +132,7 @@
 .text_wrapper .text {
   padding-bottom: 1.6rem;
   margin-bottom: 3.2rem;
-  -o-border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
-     border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
-  border-width: 1px;
-  border-style: solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border-bottom: 1px solid var(--color-2);
 }
 .text_wrapper .text .text_highlight {
   display: block;

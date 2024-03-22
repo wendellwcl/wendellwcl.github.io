@@ -99,4 +99,9 @@
 }
 .social_media_container .social_media_link svg {
   fill: url(#fill-gradient) var(--color-2);
+}
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .social_media_container .social_media_link svg {
+    fill: var(--color-2);
+  }
 }/*# sourceMappingURL=Footer.module.css.map */

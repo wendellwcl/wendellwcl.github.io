@@ -8,10 +8,7 @@
 }
 
 .img_container {
-    @include gradient-border;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border-bottom: 1px solid var(--color-1);
     width: 100%;
     overflow: hidden;
     cursor: zoom-in;
@@ -64,6 +61,7 @@
         font-size: 2rem;
         pointer-events: none;
         transition: all 0.3s;
+        fill: var(--text-color);
     }
 }
 
@@ -84,7 +82,6 @@
 .btn_container {
     button {
         @include btn-default;
-        // font-size: 1.6rem;
     }
 }
 

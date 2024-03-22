@@ -71,13 +71,7 @@
 }
 
 .img_container {
-  -o-border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
-     border-image: linear-gradient(90deg, var(--color-1), var(--color-2), var(--color-3), var(--color-4)) 30;
-  border-width: 1px;
-  border-style: solid;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border-bottom: 1px solid var(--color-1);
   width: 100%;
   overflow: hidden;
   cursor: zoom-in;
@@ -124,6 +118,7 @@
   font-size: 2rem;
   pointer-events: none;
   transition: all 0.3s;
+  fill: var(--text-color);
 }
 
 .title {
@@ -157,6 +152,12 @@
   font-size: 1.2em;
   margin-right: 0.8rem;
 }
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .btn_container button {
+    background-image: initial;
+    background-color: var(--color-2);
+  }
+}
 
 .modal_links_container {
   display: flex;
@@ -179,4 +180,10 @@
 .modal_links_container .modal_links svg {
   font-size: 1.2em;
   margin-right: 0.8rem;
+}
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .modal_links_container .modal_links {
+    background-image: initial;
+    background-color: var(--color-2);
+  }
 }/*# sourceMappingURL=ProjectCard.module.css.map */

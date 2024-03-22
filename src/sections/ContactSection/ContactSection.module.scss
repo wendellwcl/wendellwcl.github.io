@@ -32,10 +32,7 @@
     .text {
         padding-bottom: 1.6rem;
         margin-bottom: 3.2rem;
-        @include gradient-border;
-        border-top: none;
-        border-left: none;
-        border-right: none;
+        border-bottom: 1px solid var(--color-2);
 
         .text_highlight {
             display: block;

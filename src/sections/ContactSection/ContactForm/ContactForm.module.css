@@ -91,6 +91,12 @@
   font-size: 1.2em;
   margin-right: 0.8rem;
 }
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .form_btn {
+    background-image: initial;
+    background-color: var(--color-2);
+  }
+}
 .form_btn:disabled {
   opacity: 0.6;
   cursor: wait;

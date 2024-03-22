@@ -171,6 +171,14 @@
   color: transparent;
   font-weight: bold;
 }
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .about_text .text_wrapper .text .highlight {
+    background-image: initial;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    color: var(--color-2);
+  }
+}
 
 .about_resume {
   background-image: linear-gradient(90deg, var(--color-2) 10%, var(--color-3) 90%);
@@ -187,4 +195,10 @@
 .about_resume svg {
   font-size: 1.2em;
   margin-right: 0.8rem;
+}
+@media screen and (max-width: 768px) and (prefers-color-scheme: dark) {
+  .about_resume {
+    background-image: initial;
+    background-color: var(--color-2);
+  }
 }/*# sourceMappingURL=AboutSection.module.css.map */

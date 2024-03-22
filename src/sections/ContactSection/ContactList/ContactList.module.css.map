@@ -1,1 +1,1 @@
-{"version":3,"sources":["ContactList.module.scss","ContactList.module.css"],"names":[],"mappings":"AACI;EACI,iBAAA;ACAR;ADEQ;EACI,aAAA;EACA,mBAAA;EACA,wBAAA;ACAZ;ADEY;EACI,gBAAA;EACA,kBAAA;EACA,wCAAA;ACAhB","file":"ContactList.module.css"}
+{"version":3,"sources":["ContactList.module.scss","ContactList.module.css"],"names":[],"mappings":"AACI;EACI,iBAAA;ACAR;ADEQ;EACI,aAAA;EACA,mBAAA;EACA,wBAAA;ACAZ;ADEY;EACI,gBAAA;EACA,kBAAA;EACA,oBAAA;ACAhB","file":"ContactList.module.css"}
