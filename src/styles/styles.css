@@ -187,7 +187,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--background-color) url("src/assets/noise_bg.png");
+  background: var(--background-color) url("../assets/noise_bg.png");
   opacity: 0.2;
   z-index: -1;
   pointer-events: none;
