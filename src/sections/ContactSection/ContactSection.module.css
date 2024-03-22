@@ -1,29 +1,32 @@
 :root {
-  --color-dark: #141417;
-  --color-dark-010: #29282b;
-  --color-light: #ffffff;
-  --color-light-010: #e1e1e1;
+  --color-dark: #0e0a1c;
+  --color-dark-010: #362e4f;
+  --color-light: #ebe5ff;
+  --color-light-010: #ded4ff;
   --color-1: #6acee3;
-  --color-2: #845eff;
+  --color-2: #825cff;
   --color-3: #bc56ff;
   --color-4: #d44eff;
   --background-color: var(--color-light);
   --background-color-010: var(--color-light-010);
   --text-color: var(--color-dark);
   --header-height: 91.4px;
+  --footer-height: 120px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--color-dark);
+    --background-color-010: var(--color-dark-010);
+    --text-color: var(--color-light);
+  }
+}
 @media screen and (max-width: 768px) {
   :root {
     --header-height: 65px;
+    --footer-height: 116px;
   }
 }
-.dark-mode {
-  --background-color: var(--color-dark);
-  --background-color-010: var(--color-dark-010);
-  --text-color: var(--color-light);
-}
-
 @keyframes badge {
   0% {
     opacity: 0;
@@ -60,6 +63,9 @@
     left: 75%;
   }
 }
+.contact_section {
+  background: var(--background-color-010);
+}
 .contact_section .section_anchor {
   visibility: hidden;
   display: block;
@@ -78,7 +84,7 @@
 
 .contact_title {
   position: relative;
-  left: 24px;
+  left: 16px;
   font-size: 2.8rem;
   margin-bottom: 3.6rem;
 }
@@ -96,7 +102,7 @@
   height: 1.2em;
   position: absolute;
   top: -2px;
-  left: -24px;
+  left: -16px;
   background: url(../../assets/slash.svg) no-repeat;
 }
 @media screen and (max-width: 768px) {
@@ -109,16 +115,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
-  padding: 6rem 0;
 }
 @media screen and (max-width: 768px) {
   .contact_wrapper {
     grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contact_wrapper {
-    padding: 0;
   }
 }
 

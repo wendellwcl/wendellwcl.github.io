@@ -1,8 +1,6 @@
 @import "../../styles/0-helpers/helpers-dir";
 
 .projects_section {
-    background-color: var(--background-color);
-
     .section_anchor {
         @include section-scroll-anchor;
     }

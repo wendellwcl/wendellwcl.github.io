@@ -1,8 +1,6 @@
 @import "../../styles/0-helpers/helpers-dir";
 
 .about_section {
-    background-color: var(--background-color);
-
     .section_anchor {
         @include section-scroll-anchor;
     }
@@ -33,6 +31,8 @@
 }
 
 .about_img {
+    @include background-radial-gradient;
+
     @media screen and (max-width: 768px) {
         display: none;
     }

@@ -84,11 +84,7 @@
 .btn_container {
     button {
         @include btn-default;
-        transition: all 0.2s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
+        // font-size: 1.6rem;
     }
 }
 

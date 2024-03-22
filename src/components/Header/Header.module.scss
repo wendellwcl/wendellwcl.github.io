@@ -1,17 +1,28 @@
 @import "../../styles/0-helpers/helpers-dir";
 
 .header {
+    @include background-noise;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     min-width: 320px;
     padding: 2.8rem 4rem;
-    background: var(--background-color-010);
-    @include gradient-border;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    background: var(--background-color);
     z-index: 10;
+
+    &:has(.navbar[class*="show"]) {
+        &::before {
+            content: "";
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            width: 100%;
+            height: calc(100% - var(--header-height));
+            background: var(--color-dark);
+            opacity: 0.8;
+        }
+    }
 
     @media screen and (max-width: 768px) {
         padding: 1.6rem 2.8rem;
@@ -41,29 +52,12 @@
         &[class*="show"] {
             display: block;
             position: absolute;
-            bottom: 0;
+            bottom: 1px;
             right: 0;
             transform: translate(0, 100%);
             width: 100%;
-            padding: 1.6rem;
-            background: var(--background-color-010);
-            @include gradient-border;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-
-            &::before {
-                content: "";
-                position: fixed;
-                bottom: -1px;
-                left: 0;
-                width: 100vw;
-                height: 100dvh;
-                transform: translate(0, 100%);
-                background: var(--color-dark);
-                opacity: 0.8;
-                pointer-events: none;
-            }
+            padding: 0 1.6rem 1.6rem 1.6rem;
+            background: var(--background-color);
 
             .navlist {
                 flex-direction: column;

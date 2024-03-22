@@ -1,6 +1,5 @@
 //Custom Hooks
 import useScrollAnimations from "./hooks/useScrollAnimations.tsx";
-import useTheme from "./hooks/useTheme.tsx";
 
 //Sections
 import AboutSection from "./sections/AboutSection/AboutSection.tsx";
@@ -15,9 +14,6 @@ import Header from "./components/Header/Header.tsx";
 import SvgGradient from "./components/SvgGradient/SvgGradient.tsx";
 
 function App() {
-    //Detect and apply user theme (darkmode or lightmode)
-    useTheme();
-
     //Applying scroll animation logic
     useScrollAnimations();
 

@@ -1,29 +1,32 @@
 :root {
-  --color-dark: #141417;
-  --color-dark-010: #29282b;
-  --color-light: #ffffff;
-  --color-light-010: #e1e1e1;
+  --color-dark: #0e0a1c;
+  --color-dark-010: #362e4f;
+  --color-light: #ebe5ff;
+  --color-light-010: #ded4ff;
   --color-1: #6acee3;
-  --color-2: #845eff;
+  --color-2: #825cff;
   --color-3: #bc56ff;
   --color-4: #d44eff;
   --background-color: var(--color-light);
   --background-color-010: var(--color-light-010);
   --text-color: var(--color-dark);
   --header-height: 91.4px;
+  --footer-height: 120px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--color-dark);
+    --background-color-010: var(--color-dark-010);
+    --text-color: var(--color-light);
+  }
+}
 @media screen and (max-width: 768px) {
   :root {
     --header-height: 65px;
+    --footer-height: 116px;
   }
 }
-.dark-mode {
-  --background-color: var(--color-dark);
-  --background-color-010: var(--color-dark-010);
-  --text-color: var(--color-light);
-}
-
 @keyframes badge {
   0% {
     opacity: 0;
@@ -149,14 +152,10 @@
   color: var(--color-light);
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.2s;
 }
 .btn_container button svg {
   font-size: 1.2em;
   margin-right: 0.8rem;
-}
-.btn_container button:hover {
-  transform: scale(1.1);
 }
 
 .modal_links_container {
