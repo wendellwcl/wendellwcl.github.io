@@ -21,6 +21,7 @@
             height: calc(100% - var(--header-height));
             background: var(--color-dark);
             opacity: 0.8;
+            pointer-events: all;
         }
     }
 
