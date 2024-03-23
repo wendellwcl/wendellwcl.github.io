@@ -1,4 +1,5 @@
 //Custom Hooks
+import useAlertSamsung from "./hooks/useAlertSamsung.tsx";
 import useScrollAnimations from "./hooks/useScrollAnimations.tsx";
 
 //Sections
@@ -14,6 +15,9 @@ import Header from "./components/Header/Header.tsx";
 import SvgGradient from "./components/SvgGradient/SvgGradient.tsx";
 
 function App() {
+    //Checking Samsung browser in dark mode and showing alert to user
+    useAlertSamsung();
+
     //Applying scroll animation logic
     useScrollAnimations();
 
