@@ -2,10 +2,10 @@
 import { BsFileTextFill, BsTelephoneFill } from "react-icons/bs";
 
 //Assets
-import arrowLeft from "../../assets/arrow_left.svg";
-import arrowRight from "../../assets/arrow_right.svg";
-import badgeImg from "../../assets/badge_hero.png";
-import resume from "../../assets/Curriculo-Wendell.pdf";
+import badgeImg from "../../assets/img/badge_hero.png";
+import resume from "../../assets/pdf/Curriculo-Wendell.pdf";
+import arrowLeft from "../../assets/svg/arrow_left.svg";
+import arrowRight from "../../assets/svg/arrow_right.svg";
 
 //Styles
 import styles from "./HeroSection.module.css";

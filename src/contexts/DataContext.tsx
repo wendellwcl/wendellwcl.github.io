@@ -21,18 +21,18 @@ import {
 } from "react-icons/bs";
 
 //Assets
-import flixImg1 from "../assets/screenshotFlix1.png";
-import flixImg2 from "../assets/screenshotFlix2.png";
-import flixImg3 from "../assets/screenshotFlix3.png";
-import musicImg1 from "../assets/screenshotMusic1.png";
-import musicImg2 from "../assets/screenshotMusic2.png";
-import musicImg3 from "../assets/screenshotMusic3.png";
-import pokeImg1 from "../assets/screenshotPoke1.png";
-import pokeImg2 from "../assets/screenshotPoke2.png";
-import pokeImg3 from "../assets/screenshotPoke3.png";
-import taskManagerImg1 from "../assets/screenshotTaskManager1.png";
-import taskManagerImg2 from "../assets/screenshotTaskManager2.png";
-import taskManagerImg3 from "../assets/screenshotTaskManager3.png";
+import flixImg1 from "../assets/img/screenshots/screenshotFlix1.jpg";
+import flixImg2 from "../assets/img/screenshots/screenshotFlix2.jpg";
+import flixImg3 from "../assets/img/screenshots/screenshotFlix3.jpg";
+import musicImg1 from "../assets/img/screenshots/screenshotMusic1.jpg";
+import musicImg2 from "../assets/img/screenshots/screenshotMusic2.jpg";
+import musicImg3 from "../assets/img/screenshots/screenshotMusic3.jpg";
+import pokeImg1 from "../assets/img/screenshots/screenshotPoke1.jpg";
+import pokeImg2 from "../assets/img/screenshots/screenshotPoke2.jpg";
+import pokeImg3 from "../assets/img/screenshots/screenshotPoke3.jpg";
+import taskManagerImg1 from "../assets/img/screenshots/screenshotTaskManager1.jpg";
+import taskManagerImg2 from "../assets/img/screenshots/screenshotTaskManager2.jpg";
+import taskManagerImg3 from "../assets/img/screenshots/screenshotTaskManager3.jpg";
 
 interface IDataContextValue {
     skills: { name: string; element: ReactElement }[];

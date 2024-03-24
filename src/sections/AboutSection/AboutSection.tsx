@@ -2,8 +2,8 @@
 import { BsFileTextFill } from "react-icons/bs";
 
 //Assets
-import badgeImg from "../../assets/badge_about.png";
-import resume from "../../assets/Curriculo-Wendell.pdf";
+import badgeImg from "../../assets/img/badge_about.png";
+import resume from "../../assets/pdf/Curriculo-Wendell.pdf";
 
 //Styles
 import styles from "./AboutSection.module.css";

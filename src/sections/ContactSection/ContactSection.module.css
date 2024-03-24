@@ -103,7 +103,7 @@
   position: absolute;
   top: -2px;
   left: -16px;
-  background: url(../../assets/slash.svg) no-repeat;
+  background: url(../../assets/svg/slash.svg) no-repeat;
 }
 @media screen and (max-width: 768px) {
   .contact_title::before {
