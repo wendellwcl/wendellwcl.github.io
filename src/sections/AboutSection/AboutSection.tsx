@@ -30,18 +30,14 @@ const AboutSection = () => {
                                 <span className={styles.highlight}>
                                     Wendell
                                 </span>
-                                , um apaixonado pela arte de dar vida à web.
-                                Tenho sólidos conhecimentos como{" "}
+                                , e tenho como objetivo transformar ideias em
+                                realidade digital. Como{" "}
                                 <span className={styles.highlight}>
                                     desenvolvedor web front-end
                                 </span>{" "}
-                                e também muita{" "}
-                                <span className={styles.highlight}>
-                                    afinidade com design
-                                </span>
-                                . Meu objetivo é sempre entregar projetos que
-                                não apenas atendam às necessidades do cliente,
-                                mas também proporcionem uma{" "}
+                                busco sempre entregar projetos que não apenas
+                                atendam às necessidades do cliente, mas também
+                                proporcionem uma{" "}
                                 <span className={styles.highlight}>
                                     experiência excepcional aos usuários
                                 </span>
