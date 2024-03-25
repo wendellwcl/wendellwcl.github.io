@@ -1,7 +1,7 @@
 @import "../../styles/0-helpers/helpers-dir";
 
 .header {
-    @include background-noise("../../assets/noise_bg.png");
+    @include background-noise("../../assets/img/noise_bg.png");
     position: fixed;
     top: 0;
     left: 0;
