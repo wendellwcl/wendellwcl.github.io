@@ -13,12 +13,7 @@ import {
     BiLogoSass,
     BiLogoTypescript,
 } from "react-icons/bi";
-import {
-    BsEnvelopeFill,
-    BsGithub,
-    BsLinkedin,
-    BsWhatsapp,
-} from "react-icons/bs";
+import { BsEnvelopeFill, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 
 //Assets
 import flixImg1 from "../assets/img/screenshots/screenshotFlix1.jpg";
@@ -33,6 +28,9 @@ import pokeImg3 from "../assets/img/screenshots/screenshotPoke3.jpg";
 import taskManagerImg1 from "../assets/img/screenshots/screenshotTaskManager1.jpg";
 import taskManagerImg2 from "../assets/img/screenshots/screenshotTaskManager2.jpg";
 import taskManagerImg3 from "../assets/img/screenshots/screenshotTaskManager3.jpg";
+import weather360Img1 from "../assets/img/screenshots/screenshotWeather3601.png";
+import weather360Img2 from "../assets/img/screenshots/screenshotWeather3602.png";
+import weather360Img3 from "../assets/img/screenshots/screenshotWeather3603.png";
 
 interface IDataContextValue {
     skills: { name: string; element: ReactElement }[];
@@ -210,6 +208,38 @@ const DEFAULT_VALUE: IDataContextValue = {
             liveUrl: "https://wendellwcl.github.io/PlayerDeMusica/",
             repositoryUrl: "https://github.com/wendellwcl/PlayerDeMusica",
         },
+        {
+            imgs: [weather360Img1, weather360Img2, weather360Img3],
+            name: "Weather360",
+            technologies: [
+                {
+                    name: "React",
+                    icon: <BiLogoReact />,
+                },
+                {
+                    name: "TypeScript",
+                    icon: <BiLogoTypescript />,
+                },
+                {
+                    name: "JavaScript",
+                    icon: <BiLogoJavascript />,
+                },
+                {
+                    name: "Sass",
+                    icon: <BiLogoSass />,
+                },
+                {
+                    name: "CSS 3",
+                    icon: <BiLogoCss3 />,
+                },
+                {
+                    name: "HTML 5",
+                    icon: <BiLogoHtml5 />,
+                },
+            ],
+            liveUrl: "https://wendellwcl.github.io/Weather360/",
+            repositoryUrl: "https://github.com/wendellwcl/Weather360",
+        },
     ],
     contacts: [
         {
@@ -246,11 +276,7 @@ const DataContextProvider = ({ children }: Props) => {
     const projects = DEFAULT_VALUE.projects;
     const contacts = DEFAULT_VALUE.contacts;
 
-    return (
-        <DataContext.Provider value={{ skills, projects, contacts }}>
-            {children}
-        </DataContext.Provider>
-    );
+    return <DataContext.Provider value={{ skills, projects, contacts }}>{children}</DataContext.Provider>;
 };
 
 export default DataContextProvider;
