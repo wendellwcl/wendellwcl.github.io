@@ -1,22 +1,22 @@
 @import "../../../styles/0-helpers/helpers-dir";
 
-.contact_form {
+.contact-form {
     width: 100%;
     max-width: 420px;
     height: 100%;
     display: grid;
     grid-template-rows: 38px 38px auto 38px;
     gap: 1.6rem;
-}
 
-.form_btn {
-    @include btn-default;
-    width: 100%;
-    opacity: 1;
-    transition: all 0.2s;
+    &__btn {
+        @include btn-default;
+        width: 100%;
+        opacity: 1;
+        transition: all 0.2s;
 
-    &:disabled {
-        opacity: 0.6;
-        cursor: wait;
+        &:disabled {
+            opacity: 0.6;
+            cursor: wait;
+        }
     }
 }

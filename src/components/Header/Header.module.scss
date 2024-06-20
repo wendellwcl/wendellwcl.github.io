@@ -6,7 +6,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    min-width: 320px;
     padding: 2.8rem 4rem;
     background: var(--background-color);
     z-index: 10;
@@ -15,10 +14,10 @@
         &::before {
             content: "";
             position: fixed;
-            top: var(--header-height);
+            top: 0;
             left: 0;
             width: 100%;
-            height: calc(100% - var(--header-height));
+            height: 100%;
             background: var(--color-dark);
             opacity: 0.8;
             pointer-events: all;
@@ -28,17 +27,17 @@
     @media screen and (max-width: 768px) {
         padding: 1.6rem 2.8rem;
     }
+
+    &__container {
+        @include container;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
-.header_container {
-    @include container;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo_container {
+.logo {
     width: 160px;
 
     @media screen and (max-width: 768px) {
@@ -78,19 +77,19 @@
             color: var(--text-color);
             cursor: pointer;
 
-            &.contact_btn {
+            &--emphasis {
                 @include btn-default;
             }
         }
     }
 }
 
-.nav_mobile_btn {
+.nav-mobile-btn {
+    display: none;
     background: transparent;
     color: var(--text-color);
     font-size: 3.2rem;
     cursor: pointer;
-    display: none;
 
     @media screen and (max-width: 768px) {
         display: flex;

@@ -4,13 +4,9 @@ import { ReactElement, useLayoutEffect, useRef } from "react";
 import { BsCaretLeftFill, BsCaretRightFill } from "react-icons/bs";
 
 //Styles
-import styles from "./Carousel.module.css";
+import styles from "./Carousel.module.scss";
 
-interface Props {
-    children: ReactElement[];
-}
-
-const Carousel = ({ children }: Props) => {
+const Carousel = ({ children }: { children: ReactElement[] }) => {
     const carouselRef = useRef<HTMLDivElement>(null);
 
     //Preparing carousel and adding necessary classes
@@ -50,22 +46,16 @@ const Carousel = ({ children }: Props) => {
     }
 
     return (
-        <div className={styles.carousel_container}>
-            <button
-                className={`${styles.btn_action} prev`}
-                onClick={() => handleArrowClick("prev")}
-            >
+        <div className={styles["carousel"]}>
+            <button className={`${styles["carousel__action-btn"]} prev`} onClick={() => handleArrowClick("prev")}>
                 <BsCaretLeftFill />
             </button>
 
-            <button
-                className={`${styles.btn_action} next`}
-                onClick={() => handleArrowClick("next")}
-            >
+            <button className={`${styles["carousel__action-btn"]} next`} onClick={() => handleArrowClick("next")}>
                 <BsCaretRightFill />
             </button>
 
-            <div className={styles.carousel} ref={carouselRef}>
+            <div className={styles["carousel__content"]} ref={carouselRef}>
                 {children}
             </div>
         </div>

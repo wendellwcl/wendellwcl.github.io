@@ -3,33 +3,29 @@ import ContactForm from "./ContactForm/ContactForm";
 import ContactList from "./ContactList/ContactList";
 
 //Styles
-import styles from "./ContactSection.module.css";
+import styles from "./ContactSection.module.scss";
 
 const ContactSection = () => {
     return (
-        <section className={styles.contact_section}>
-            <span className={styles.section_anchor} id="contact-section"></span>
+        <section className={styles["contact-section"]}>
+            <span className={styles["contact-section__anchor"]} id="contact-section"></span>
 
-            <div className={`${styles.contact_container} scroll_animation`}>
-                <h3 className={styles.contact_title}>Contato</h3>
+            <div className={`${styles["contact"]} scroll_animation`}>
+                <h3 className={styles["contact__title"]}>Contato</h3>
 
-                <div className={styles.contact_wrapper}>
-                    <div className={styles.text_container}>
-                        <div className={styles.text_wrapper}>
-                            <p className={styles.text}>
-                                <span className={styles.text_highlight}>
-                                    Envie sua mensagem agora mesmo!
-                                </span>
-                                <span className={styles.text_secondary}>
-                                    Vamos conversar sobre seus projetos.
-                                </span>
+                <div className={styles["contact__wrapper"]}>
+                    <div className={styles["text-container"]}>
+                        <div className={styles["text-wrapper"]}>
+                            <p className={styles["text"]}>
+                                <span className={styles["text--emphasis"]}>Envie sua mensagem agora mesmo!</span>
+                                <span className={styles["text--secondary"]}>Vamos conversar sobre seus projetos.</span>
                             </p>
 
                             <ContactList />
                         </div>
                     </div>
 
-                    <div className={styles.form_container}>
+                    <div className={styles["form-container"]}>
                         <ContactForm />
                     </div>
                 </div>

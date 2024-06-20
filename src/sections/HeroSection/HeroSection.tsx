@@ -8,38 +8,30 @@ import arrowLeft from "../../assets/svg/arrow_left.svg";
 import arrowRight from "../../assets/svg/arrow_right.svg";
 
 //Styles
-import styles from "./HeroSection.module.css";
+import styles from "./HeroSection.module.scss";
 
 const HeroSection = () => {
     return (
-        <section className={styles.hero_section}>
-            <div className={`${styles.hero_container} scroll_animation`}>
-                <div className={styles.greeting_container}>
-                    <div className={styles.greeting_wrapper}>
-                        <h1 className={styles.greeting}>
+        <section className={styles["hero"]}>
+            <div className={`${styles["hero__container"]} scroll_animation`}>
+                <div className={styles["greeting-container"]}>
+                    <div className={styles["greeting"]}>
+                        <h1 className={styles["greeting__message"]}>
                             Olá,
                             <br />
-                            eu sou <span className={styles.name}>Wendell</span>
+                            eu sou <span className={styles["greeting__message--emphasis"]}>Wendell</span>
                         </h1>
 
-                        <h2 className={styles.role}>
-                            &lt;Desenvolvedor Front-End /&gt;
-                        </h2>
+                        <h2 className={styles["greeting__role"]}>&lt; Front-End Dev /&gt;</h2>
 
-                        <p className={styles.graduation}>
-                            3º semestre - Sistemas para internet
-                        </p>
+                        <p className={styles["greeting__graduation"]}>4º semestre - Sistemas para internet</p>
 
-                        <div className={styles.btn_container}>
-                            <a
-                                className={styles.btn}
-                                href={resume}
-                                target="_blank"
-                            >
+                        <div className={styles["btn-container"]}>
+                            <a className={styles["btn"]} href={resume} target="_blank">
                                 <BsFileTextFill />
                                 Curriculo
                             </a>
-                            <a className={styles.btn} href="#contact-section">
+                            <a className={styles["btn"]} href="#contact-section">
                                 <BsTelephoneFill />
                                 Contato
                             </a>
@@ -47,21 +39,15 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className={styles.img_container}>
-                    <div className={styles.badge_img_wrapper}>
+                <div className={styles["badge-container"]}>
+                    <div className={styles["badge"]}>
                         <img
-                            className={styles.badge_img}
+                            className={styles["badge__img"]}
                             src={badgeImg}
                             alt="imagem de um crachá com a foto do desenvolvedor do site"
                         />
-                        <img
-                            className={`${styles.arrow_img} left`}
-                            src={arrowLeft}
-                        />
-                        <img
-                            className={`${styles.arrow_img} right`}
-                            src={arrowRight}
-                        />
+                        <img className={`${styles["badge__arrow"]} left`} src={arrowLeft} />
+                        <img className={`${styles["badge__arrow"]} right`} src={arrowRight} />
                     </div>
                 </div>
             </div>

@@ -3,17 +3,17 @@ import { ReactElement } from "react";
 //Icons
 import { BsFillEyeFill, BsGithub, BsWindow } from "react-icons/bs";
 
-//Custom Hooks
-import useModal from "../../../hooks/useModal";
-
 //Components
 import Carousel from "../../../components/Carousel/Carousel";
 import Modal from "../../../components/Modal/Modal";
 
-//Styles
-import styles from "./ProjectCard.module.css";
+//Utils
+import { openModal } from "../../../utils/ModalActions";
 
-interface Props {
+//Styles
+import styles from "./ProjectCard.module.scss";
+
+interface ProjectCardProps {
     projectData: {
         imgs: string[];
         name: string;
@@ -23,13 +23,11 @@ interface Props {
     };
 }
 
-const ProjectCard = ({ projectData }: Props) => {
-    const { openModal } = useModal();
-
+const ProjectCard = ({ projectData }: ProjectCardProps) => {
     return (
-        <article className={styles.card_container}>
-            <div className={`${styles.card_body} scroll_animation`}>
-                <div className={styles.img_container}>
+        <article className={styles["card-container"]}>
+            <div className={`${styles["card"]} scroll_animation`}>
+                <div className={styles["card__img"]}>
                     <img
                         src={projectData.imgs[0]}
                         alt={`imagem do porjeto ${projectData.name}`}
@@ -37,27 +35,19 @@ const ProjectCard = ({ projectData }: Props) => {
                     />
                 </div>
 
-                <div className={styles.card_infos}>
-                    <div className={styles.technologies}>
+                <div className={styles["card__infos"]}>
+                    <div className={styles["technologies"]}>
                         {projectData.technologies.map((item, index) => (
-                            <span
-                                className={styles.technology_item}
-                                title={item.name}
-                                key={index}
-                            >
+                            <span className={styles["technologies__item"]} title={item.name} key={index}>
                                 {item.icon}
                             </span>
                         ))}
                     </div>
 
-                    <h4 className={styles.title}>{projectData.name}</h4>
+                    <h4 className={styles["title"]}>{projectData.name}</h4>
 
-                    <div className={styles.btn_container}>
-                        <button
-                            onClick={() =>
-                                openModal(`modal-${projectData.name}`)
-                            }
-                        >
+                    <div className={styles["btn-container"]}>
+                        <button onClick={() => openModal(`modal-${projectData.name}`)}>
                             <BsFillEyeFill />
                             Visualizar
                         </button>
@@ -73,21 +63,13 @@ const ProjectCard = ({ projectData }: Props) => {
                         ))}
                     </Carousel>
 
-                    <div className={styles.modal_links_container}>
-                        <a
-                            className={styles.modal_links}
-                            href={projectData.liveUrl}
-                            target="_blank"
-                        >
+                    <div className={styles["modal-footer"]}>
+                        <a className={styles["modal-footer__link"]} href={projectData.liveUrl} target="_blank">
                             <BsWindow />
                             Acessar Projeto
                         </a>
 
-                        <a
-                            className={styles.modal_links}
-                            href={projectData.repositoryUrl}
-                            target="_blank"
-                        >
+                        <a className={styles["modal-footer__link"]} href={projectData.repositoryUrl} target="_blank">
                             <BsGithub />
                             Visitar Repositório
                         </a>

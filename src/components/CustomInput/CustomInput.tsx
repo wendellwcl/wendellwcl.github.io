@@ -1,22 +1,39 @@
-//Styles
-import styles from "./CustomInput.module.css";
+import { useLayoutEffect, useRef } from "react";
 
-interface Props {
-    type: string;
+//Styles
+import styles from "./CustomInput.module.scss";
+
+interface CustomInputProps {
+    type?: string;
     name: string;
     placeholder: string;
     required: boolean;
 }
 
-const CustomInput = ({ type, name, placeholder, required }: Props) => {
+const CustomInput = ({ type = "text", name, placeholder, required }: CustomInputProps) => {
+    const inputRef = useRef<HTMLDivElement | null>(null);
+
+    //Logic for controlling input field animations
+    useLayoutEffect(() => {
+        inputRef.current?.querySelector(".input_field")?.addEventListener("blur", (event) => {
+            const target = event.target as HTMLInputElement;
+
+            if (target.value != "") {
+                target.nextElementSibling?.classList.add("filled");
+            } else {
+                target.nextElementSibling?.classList.remove("filled");
+            }
+        });
+    }, []);
+
     return (
-        <div className={styles.input_container}>
+        <div className={styles["input-container"]} ref={inputRef}>
             {type !== "textarea" && (
                 <input
                     type={type}
                     name={name}
                     id={name}
-                    className={`${styles.input_field} input_field`}
+                    className={`${styles["input-field"]} input_field`}
                     placeholder={placeholder}
                     required={required}
                 />
@@ -26,13 +43,13 @@ const CustomInput = ({ type, name, placeholder, required }: Props) => {
                 <textarea
                     name={name}
                     id={name}
-                    className={`${styles.input_field} input_field`}
+                    className={`${styles["input-field"]} input_field`}
                     placeholder={placeholder}
                     required={required}
                 />
             )}
 
-            <label htmlFor={name} className={styles.label}>
+            <label htmlFor={name} className={styles["label"]}>
                 {placeholder}
             </label>
         </div>

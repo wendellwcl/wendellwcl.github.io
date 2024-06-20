@@ -1,25 +1,27 @@
 @import "../../styles/0-helpers/helpers-dir";
 
-.footer_container {
-    @include container;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1.6rem;
+.footer {
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.6rem;
+    }
 }
 
-.logo_container {
+.logo {
     width: 100%;
     max-width: 100px;
 }
 
-.social_media_container {
+.social-media {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
 
-    .social_media_link {
+    &__link {
         padding: 0.8rem;
         display: flex;
         align-items: center;

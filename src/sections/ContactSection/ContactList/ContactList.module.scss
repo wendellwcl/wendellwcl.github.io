@@ -1,8 +1,8 @@
-.contact_list {
-    .contact_item {
+.contact {
+    &__item {
         padding: 1.2rem 0;
 
-        .contact_link {
+        &__link {
             display: flex;
             align-items: center;
             color: var(--text-color);

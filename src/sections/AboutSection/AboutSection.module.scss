@@ -1,68 +1,68 @@
 @import "../../styles/0-helpers/helpers-dir";
 
-.about_section {
-    .section_anchor {
+.about {
+    &__anchor {
         @include section-scroll-anchor;
     }
-}
 
-.about_container {
-    @include container;
-    min-height: calc(100dvh - var(--header-height));
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &__container {
+        @include container;
+        min-height: calc(100dvh - var(--header-height));
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    @media screen and (max-width: 768px) {
-        min-height: initial;
-    }
-}
-
-.about_wrapper {
-    @include two-column-grid;
-    gap: 6.4rem;
-}
-
-.about_img,
-.about_text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about_img {
-    @include background-radial-gradient;
-
-    @media screen and (max-width: 768px) {
-        display: none;
+        @media screen and (max-width: 768px) {
+            min-height: initial;
+        }
     }
 
-    img {
-        display: block;
-        width: 100%;
-        max-width: 480px;
-        aspect-ratio: 1/1;
+    &__content {
+        @include two-column-grid;
+        gap: 6.4rem;
     }
-}
 
-.about_text {
-    .text_wrapper {
-        .title {
-            @include section_title;
+    &__img,
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        @include background-radial-gradient;
+
+        @media screen and (max-width: 768px) {
+            display: none;
         }
 
-        .text {
-            line-height: 2.4rem;
-            margin-bottom: 3.2rem;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 480px;
+            aspect-ratio: 1/1;
+        }
+    }
 
-            .highlight {
-                @include text-gradient-dual;
-                font-weight: bold;
+    &__text {
+        .text {
+            &__title {
+                @include section_title;
+            }
+
+            &__content {
+                line-height: 2.4rem;
+                margin-bottom: 3.2rem;
+
+                .emphasis {
+                    @include text-gradient-dual;
+                    font-weight: bold;
+                }
             }
         }
-    }
-}
 
-.about_resume {
-    @include btn-default;
+        .resume-btn {
+            @include btn-default;
+        }
+    }
 }

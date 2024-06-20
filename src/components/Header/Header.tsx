@@ -7,7 +7,7 @@ import { BsList } from "react-icons/bs";
 import Logo from "../Logo/Logo";
 
 //Styles
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 const Header = () => {
     const navRef = useRef<HTMLElement>(null);
@@ -16,10 +16,7 @@ const Header = () => {
     //Logic to hide navbar when clicking outside it is detected
     useEffect(() => {
         function hideNavbarOnClickOutside(e: MouseEvent) {
-            if (
-                !(e.target === navBtnRef.current) &&
-                !navRef.current!.contains(e.target as HTMLElement)
-            ) {
+            if (!(e.target === navBtnRef.current) && !navRef.current!.contains(e.target as HTMLElement)) {
                 hideNavbar();
             }
         }
@@ -42,46 +39,34 @@ const Header = () => {
     }
 
     return (
-        <header className={styles.header}>
-            <div className={styles.header_container}>
-                <div className={styles.logo_container}>
+        <header className={styles["header"]}>
+            <div className={styles["header__container"]}>
+                <div className={styles["logo"]}>
                     <a href="#">
                         <Logo />
                     </a>
                 </div>
 
-                <nav className={styles.navbar} ref={navRef}>
-                    <ul className={styles.navlist}>
-                        <li className={styles.navitem}>
-                            <a
-                                className={styles.navlink}
-                                href="#about-section"
-                                onClick={() => hideNavbar()}
-                            >
+                <nav className={styles["navbar"]} ref={navRef}>
+                    <ul className={styles["navlist"]}>
+                        <li className={styles["navitem"]}>
+                            <a className={styles["navlink"]} href="#about-section" onClick={() => hideNavbar()}>
                                 Sobre
                             </a>
                         </li>
-                        <li className={styles.navitem}>
-                            <a
-                                className={styles.navlink}
-                                href="#skills-section"
-                                onClick={() => hideNavbar()}
-                            >
+                        <li className={styles["navitem"]}>
+                            <a className={styles["navlink"]} href="#skills-section" onClick={() => hideNavbar()}>
                                 Skills
                             </a>
                         </li>
-                        <li className={styles.navitem}>
-                            <a
-                                className={styles.navlink}
-                                href="#projects-section"
-                                onClick={() => hideNavbar()}
-                            >
+                        <li className={styles["navitem"]}>
+                            <a className={styles["navlink"]} href="#projects-section" onClick={() => hideNavbar()}>
                                 Projetos
                             </a>
                         </li>
-                        <li className={styles.navitem}>
+                        <li className={styles["navitem"]}>
                             <a
-                                className={`${styles.navlink} ${styles.contact_btn}`}
+                                className={styles["navlink--emphasis"]}
                                 href="#contact-section"
                                 onClick={() => hideNavbar()}
                             >
@@ -91,11 +76,7 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <button
-                    className={styles.nav_mobile_btn}
-                    onClick={() => toggleNav()}
-                    ref={navBtnRef}
-                >
+                <button className={styles["nav-mobile-btn"]} onClick={() => toggleNav()} ref={navBtnRef}>
                     <BsList />
                 </button>
             </div>

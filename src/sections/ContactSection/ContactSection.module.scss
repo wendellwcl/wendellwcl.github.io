@@ -1,53 +1,55 @@
 @import "../../styles/0-helpers/helpers-dir";
 
-.contact_section {
+.contact-section {
     background: var(--background-color-010);
 
-    .section_anchor {
+    &__anchor {
         @include section-scroll-anchor;
     }
 }
 
-.contact_container {
+.contact {
     @include container;
+
+    &__title {
+        @include section_title;
+    }
+
+    &__wrapper {
+        @include two-column-grid;
+        gap: 4rem;
+    }
 }
 
-.contact_title {
-    @include section_title;
-}
-
-.contact_wrapper {
-    @include two-column-grid;
-    gap: 4rem;
-}
-
-.text_container,
-.form_container {
+.text-container,
+.form-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.text_wrapper {
-    .text {
+.text-container {
+    .text-wrapper {
         padding-bottom: 1.6rem;
         margin-bottom: 3.2rem;
         border-bottom: 1px solid var(--color-2);
 
-        .text_highlight {
-            display: block;
-            font-weight: bold;
-            font-size: 2.4rem;
-            margin-bottom: 0.4rem;
+        .text {
+            &--emphasis {
+                display: block;
+                font-weight: bold;
+                font-size: 2.4rem;
+                margin-bottom: 0.4rem;
 
-            @media screen and (max-width: 768px) {
-                font-size: 2rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 2rem;
+                }
             }
-        }
 
-        .text_secondary {
-            @media screen and (max-width: 768px) {
-                display: none;
+            &--secondary {
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
             }
         }
     }

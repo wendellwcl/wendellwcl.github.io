@@ -1,24 +1,24 @@
 @import "../../styles/0-helpers/helpers-dir";
 
-.projects_section {
-    .section_anchor {
+.projects {
+    &__anchor {
         @include section-scroll-anchor;
     }
-}
 
-.projects_container {
-    @include container;
-}
+    &__container {
+        @include container;
+    }
 
-.projects_title {
-    @include section_title;
-}
+    &__title {
+        @include section_title;
+    }
 
-.projects_wrapper {
-    @include two-column-grid;
-    gap: 8rem;
+    &__content {
+        @include two-column-grid;
+        gap: 6rem;
 
-    @media screen and (max-width: 768px) {
-        gap: 3.2rem;
+        @media screen and (max-width: 768px) {
+            gap: 3.2rem;
+        }
     }
 }

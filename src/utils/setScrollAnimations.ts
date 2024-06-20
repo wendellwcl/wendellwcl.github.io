@@ -1,9 +1,13 @@
+/**
+ * Apply scroll animation settings
+ * @param {} - none.
+ * @returns {} - none.
+ */
+
 import { useEffect, useLayoutEffect, useState } from "react";
 
-const useScrollAnimations = () => {
-    const [elementsArr, setElementsArr] = useState<NodeListOf<Element> | null>(
-        null
-    );
+const setScrollAnimations = () => {
+    const [elementsArr, setElementsArr] = useState<NodeListOf<Element> | null>(null);
 
     //Get and set elements
     useLayoutEffect(() => {
@@ -41,4 +45,4 @@ const useScrollAnimations = () => {
     );
 };
 
-export default useScrollAnimations;
+export default setScrollAnimations;

@@ -7,21 +7,18 @@ import { DataContext } from "../../contexts/DataContext";
 import ProjectCard from "./ProjectCard/ProjectCard";
 
 //Styles
-import styles from "./ProjectsSection.module.css";
+import styles from "./ProjectsSection.module.scss";
 
 const ProjectsSection = () => {
     const { projects } = useContext(DataContext);
 
     return (
-        <section className={styles.projects_section}>
-            <span
-                className={styles.section_anchor}
-                id="projects-section"
-            ></span>
-            <div className={styles.projects_container}>
-                <h3 className={styles.projects_title}>Projetos</h3>
+        <section className={styles["projects"]}>
+            <span className={styles["projects__anchor"]} id="projects-section"></span>
+            <div className={styles["projects__container"]}>
+                <h3 className={styles["projects__title"]}>Projetos</h3>
 
-                <div className={styles.projects_wrapper}>
+                <div className={styles["projects__content"]}>
                     {projects.map((project, index) => (
                         <ProjectCard key={index} projectData={project} />
                     ))}
