@@ -17,19 +17,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            padding-top: 1rem;
 
             .skills {
                 display: grid;
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-rows: initial;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
-                gap: 3.2rem;
+                gap: 4rem;
 
                 @media screen and (max-width: 768px) {
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
+                    gap: 1.6rem;
                 }
 
                 &__item {
@@ -39,7 +39,7 @@
 
                     svg {
                         fill: url(#fill-gradient) var(--color-2);
-                        font-size: clamp(6.4rem, 12vw, 12rem);
+                        font-size: clamp(4.8rem, 12vw, 12rem);
                         margin-bottom: 0.4rem;
                         transition: all 0.2s;
 

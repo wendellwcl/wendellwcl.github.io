@@ -20,13 +20,6 @@ const Footer = () => {
                 <div className={styles["social-media"]}>
                     <a
                         className={styles["social-media__link"]}
-                        href="https://www.instagram.com/wendell.wcl/"
-                        target="_blank"
-                    >
-                        <BsInstagram />
-                    </a>
-                    <a
-                        className={styles["social-media__link"]}
                         href="https://www.linkedin.com/in/wendellwcl/"
                         target="_blank"
                     >
@@ -34,6 +27,13 @@ const Footer = () => {
                     </a>
                     <a className={styles["social-media__link"]} href="https://github.com/wendellwcl" target="_blank">
                         <BsGithub />
+                    </a>
+                    <a
+                        className={styles["social-media__link"]}
+                        href="https://www.instagram.com/wendell.wcl/"
+                        target="_blank"
+                    >
+                        <BsInstagram />
                     </a>
                 </div>
             </div>

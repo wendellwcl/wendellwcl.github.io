@@ -6,19 +6,22 @@ import {
     BiLogoCss3,
     BiLogoHtml5,
     BiLogoJavascript,
+    BiLogoMongodb,
     BiLogoReact,
     BiLogoSass,
+    BiLogoTailwindCss,
     BiLogoTypescript,
 } from "react-icons/bi";
 import { BsEnvelopeFill, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { SiNextdotjs } from "react-icons/si";
 
 //Assets
-import flixImg1 from "../assets/img/screenshots/screenshotFlix1.jpg";
-import flixImg2 from "../assets/img/screenshots/screenshotFlix2.jpg";
-import flixImg3 from "../assets/img/screenshots/screenshotFlix3.jpg";
 import pokeImg1 from "../assets/img/screenshots/screenshotPoke1.jpg";
 import pokeImg2 from "../assets/img/screenshots/screenshotPoke2.jpg";
 import pokeImg3 from "../assets/img/screenshots/screenshotPoke3.jpg";
+import pokeBingoImg1 from "../assets/img/screenshots/screenshotPokeBingo1.jpg";
+import pokeBingoImg2 from "../assets/img/screenshots/screenshotPokeBingo2.jpg";
+import pokeBingoImg3 from "../assets/img/screenshots/screenshotPokeBingo3.jpg";
 import taskManagerImg1 from "../assets/img/screenshots/screenshotTaskManager1.jpg";
 import taskManagerImg2 from "../assets/img/screenshots/screenshotTaskManager2.jpg";
 import taskManagerImg3 from "../assets/img/screenshots/screenshotTaskManager3.jpg";
@@ -39,14 +42,33 @@ interface IDataContextValue {
 
 const DEFAULT_VALUE: IDataContextValue = {
     skills: [
-        new Skill("React", <BiLogoReact />),
+        new Skill("NextJS", <SiNextdotjs />),
+        new Skill("ReactJS", <BiLogoReact />),
         new Skill("TypeScript", <BiLogoTypescript />),
         new Skill("JavaScript", <BiLogoJavascript />),
+        new Skill("Tailwind", <BiLogoTailwindCss />),
         new Skill("Sass", <BiLogoSass />),
-        new Skill("HTML", <BiLogoHtml5 />),
         new Skill("CSS", <BiLogoCss3 />),
+        new Skill("HTML", <BiLogoHtml5 />),
     ],
     projects: [
+        new Project(
+            [pokeBingoImg1, pokeBingoImg2, pokeBingoImg3],
+            "PokeBingo",
+            [
+                new Icon("NextJS", <SiNextdotjs />),
+                new Icon("MongoDB", <BiLogoMongodb />),
+                new Icon("React", <BiLogoReact />),
+                new Icon("TypeScript", <BiLogoTypescript />),
+                new Icon("Tailwind", <BiLogoTailwindCss />),
+                new Icon("Sass", <BiLogoSass />),
+                new Icon("JavaScript", <BiLogoJavascript />),
+                new Icon("CSS 3", <BiLogoCss3 />),
+                new Icon("HTML 5", <BiLogoHtml5 />),
+            ],
+            "https://poke-bingo-wendell-correa-limas-projects.vercel.app/",
+            "https://github.com/wendellwcl/PokeBingo"
+        ),
         new Project(
             [pokeImg1, pokeImg2, pokeImg3],
             "Poke",
@@ -61,20 +83,7 @@ const DEFAULT_VALUE: IDataContextValue = {
             "https://wendellwcl.github.io/poke/",
             "https://github.com/wendellwcl/poke"
         ),
-        new Project(
-            [taskManagerImg1, taskManagerImg2, taskManagerImg3],
-            "TaskManager",
-            [
-                new Icon("Angular", <BiLogoAngular />),
-                new Icon("TypeScript", <BiLogoTypescript />),
-                new Icon("JavaScript", <BiLogoJavascript />),
-                new Icon("Sass", <BiLogoSass />),
-                new Icon("CSS 3", <BiLogoCss3 />),
-                new Icon("HTML 5", <BiLogoHtml5 />),
-            ],
-            "https://wendellwcl.github.io/TaskManager/",
-            "https://github.com/wendellwcl/TaskManager"
-        ),
+
         new Project(
             [weather360Img1, weather360Img2, weather360Img3],
             "Weather360",
@@ -90,18 +99,18 @@ const DEFAULT_VALUE: IDataContextValue = {
             "https://github.com/wendellwcl/Weather360"
         ),
         new Project(
-            [flixImg1, flixImg2, flixImg3],
-            "Flix",
+            [taskManagerImg1, taskManagerImg2, taskManagerImg3],
+            "TaskManager",
             [
-                new Icon("React", <BiLogoReact />),
+                new Icon("Angular", <BiLogoAngular />),
                 new Icon("TypeScript", <BiLogoTypescript />),
                 new Icon("JavaScript", <BiLogoJavascript />),
                 new Icon("Sass", <BiLogoSass />),
                 new Icon("CSS 3", <BiLogoCss3 />),
                 new Icon("HTML 5", <BiLogoHtml5 />),
             ],
-            "https://wendellwcl.github.io/flix/",
-            "https://github.com/wendellwcl/flix"
+            "https://wendellwcl.github.io/TaskManager/",
+            "https://github.com/wendellwcl/TaskManager"
         ),
     ],
     contacts: [
