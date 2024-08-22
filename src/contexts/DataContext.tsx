@@ -66,7 +66,7 @@ const DEFAULT_VALUE: IDataContextValue = {
                 new Icon("CSS 3", <BiLogoCss3 />),
                 new Icon("HTML 5", <BiLogoHtml5 />),
             ],
-            "https://poke-bingo-wendell-correa-limas-projects.vercel.app/",
+            "https://poke-bingo.vercel.app",
             "https://github.com/wendellwcl/PokeBingo"
         ),
         new Project(
