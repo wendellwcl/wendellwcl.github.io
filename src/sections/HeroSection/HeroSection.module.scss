@@ -52,19 +52,11 @@
 
     &__role {
         font-size: 2.4rem;
-        margin-bottom: 0.4rem;
+        margin-bottom: 1.6rem;
         @include text-gradient-dual;
 
         @media screen and (max-width: 480px) {
             font-size: 1.6rem;
-        }
-    }
-
-    &__graduation {
-        margin-bottom: 1.6rem;
-
-        @media screen and (max-width: 480px) {
-            font-size: 1.4rem;
         }
     }
 

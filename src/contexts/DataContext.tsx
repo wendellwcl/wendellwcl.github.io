@@ -42,8 +42,8 @@ interface IDataContextValue {
 
 const DEFAULT_VALUE: IDataContextValue = {
     skills: [
-        new Skill("NextJS", <SiNextdotjs />),
         new Skill("ReactJS", <BiLogoReact />),
+        new Skill("NextJS", <SiNextdotjs />),
         new Skill("TypeScript", <BiLogoTypescript />),
         new Skill("JavaScript", <BiLogoJavascript />),
         new Skill("Tailwind", <BiLogoTailwindCss />),

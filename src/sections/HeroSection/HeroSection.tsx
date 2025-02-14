@@ -22,9 +22,7 @@ const HeroSection = () => {
                             eu sou <span className={styles["greeting__message--emphasis"]}>Wendell</span>
                         </h1>
 
-                        <h2 className={styles["greeting__role"]}>&lt; Front-End Dev /&gt;</h2>
-
-                        <p className={styles["greeting__graduation"]}>4º semestre - Sistemas para internet</p>
+                        <h2 className={styles["greeting__role"]}>&lt;Front-End Dev/&gt;</h2>
 
                         <div className={styles["btn-container"]}>
                             <a className={styles["btn"]} href={resume} target="_blank">
